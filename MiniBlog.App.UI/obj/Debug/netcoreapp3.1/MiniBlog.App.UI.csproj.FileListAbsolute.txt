@@ -34,3 +34,4 @@ D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.
 D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.dll
 D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.pdb
 D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.csproj.CopyComplete
+D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.csprojAssemblyReference.cache

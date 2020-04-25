@@ -34,3 +34,4 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.A
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.genruntimeconfig.cache
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.csproj.CopyComplete
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.csprojAssemblyReference.cache
