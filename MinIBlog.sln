@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBlog.App.ManageUI", "Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBlog.App.UI", "MiniBlog.App.UI\MiniBlog.App.UI.csproj", "{CC9716F3-CD99-4CBD-8FEF-05804C3AC255}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBlog.Core.ViewModels", "MiniBlog.Core.ViewModels\MiniBlog.Core.ViewModels.csproj", "{B7291AD7-B440-45C4-97A4-BCCEF0C829AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{CC9716F3-CD99-4CBD-8FEF-05804C3AC255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC9716F3-CD99-4CBD-8FEF-05804C3AC255}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC9716F3-CD99-4CBD-8FEF-05804C3AC255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7291AD7-B440-45C4-97A4-BCCEF0C829AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7291AD7-B440-45C4-97A4-BCCEF0C829AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7291AD7-B440-45C4-97A4-BCCEF0C829AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7291AD7-B440-45C4-97A4-BCCEF0C829AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{28CBBE38-CC28-49E1-902F-083982430759} = {C8837412-0CA7-46C8-84A3-42DF0E2827E8}
 		{330EAA80-CABF-4AF8-94EC-52ED68400F2C} = {960EFA79-08BF-49B5-9455-D608E2D47C74}
 		{CC9716F3-CD99-4CBD-8FEF-05804C3AC255} = {960EFA79-08BF-49B5-9455-D608E2D47C74}
+		{B7291AD7-B440-45C4-97A4-BCCEF0C829AF} = {C8837412-0CA7-46C8-84A3-42DF0E2827E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA2E86CD-6A54-4A23-957F-9322E698D24D}
