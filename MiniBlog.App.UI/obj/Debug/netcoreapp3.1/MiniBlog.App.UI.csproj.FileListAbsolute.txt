@@ -5,7 +5,6 @@ D:\working2020\MiniBlog\MiniBlog.App.UI\bin\Debug\netcoreapp3.1\MiniBlog.App.UI.
 D:\working2020\MiniBlog\MiniBlog.App.UI\bin\Debug\netcoreapp3.1\MiniBlog.App.UI.runtimeconfig.json
 D:\working2020\MiniBlog\MiniBlog.App.UI\bin\Debug\netcoreapp3.1\MiniBlog.App.UI.runtimeconfig.dev.json
 D:\working2020\MiniBlog\MiniBlog.App.UI\bin\Debug\netcoreapp3.1\MiniBlog.App.UI.dll
-D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.csprojAssemblyReference.cache
 D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.RazorAssemblyInfo.cache
 D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.RazorAssemblyInfo.cs
 D:\working2020\MiniBlog\MiniBlog.App.UI\obj\Debug\netcoreapp3.1\MiniBlog.App.UI.AssemblyInfoInputs.cache

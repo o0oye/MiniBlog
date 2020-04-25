@@ -1,7 +1,11 @@
-﻿namespace MiniBlog.Data.Dto
+﻿using System;
+
+namespace MiniBlog.Data.Dto
 {
     public interface IDtoBase<TPrimaryKey>
     {
-        TPrimaryKey ID { get; set; }
+        TPrimaryKey Id { get; set; }
+        DateTime CreateTime { get; set; }
+        DateTime UpdateTime { get; set; }
     }
 }

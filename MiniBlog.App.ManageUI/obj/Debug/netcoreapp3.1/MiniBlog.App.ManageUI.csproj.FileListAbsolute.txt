@@ -2,7 +2,6 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\appsetting
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\appsettings.json
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.exe
-D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.csprojAssemblyReference.cache
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.RazorAssemblyInfo.cache
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.RazorAssemblyInfo.cs
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.AssemblyInfoInputs.cache
