@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MiniBlog.Data.IData\MiniBlog.Data.IData.csproj" />
+    <ProjectReference Include="..\MiniBlog.Data\MiniBlog.Data.csproj" />
+  </ItemGroup>
+
 </Project>
