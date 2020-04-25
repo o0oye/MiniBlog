@@ -81,6 +81,24 @@ namespace MiniBlog.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "Admin",
+                columns: new[] { "Id", "CreateTime", "Password", "UpdateTime", "User" },
+                values: new object[] { 1, new DateTime(2020, 4, 26, 2, 54, 32, 140, DateTimeKind.Local).AddTicks(6696), "123456", new DateTime(2020, 4, 26, 2, 54, 32, 142, DateTimeKind.Local).AddTicks(1124), "admin" });
+
+            migrationBuilder.InsertData(
+                table: "Category",
+                columns: new[] { "Id", "Category", "CreateTime", "UpdateTime" },
+                values: new object[,]
+                {
+                    { 1, "Category1", new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7307), new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7332) },
+                    { 2, "Category2", new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7398), new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7400) },
+                    { 3, "Category3", new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7403), new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7405) },
+                    { 4, "Category4", new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7407), new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7408) },
+                    { 5, "Category5", new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7410), new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7412) },
+                    { 6, "Category6", new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7418), new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7420) }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Post_CategoryId",
                 table: "Post",

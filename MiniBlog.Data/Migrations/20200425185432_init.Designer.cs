@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MiniBlog.Data;
 
 namespace MiniBlog.Data.Migrations
 {
     [DbContext(typeof(MiniBlogDbContext))]
-    partial class MiniBlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200425185432_init")]
+    partial class init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,9 +49,9 @@ namespace MiniBlog.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 672, DateTimeKind.Local).AddTicks(3245),
+                            CreateTime = new DateTime(2020, 4, 26, 2, 54, 32, 140, DateTimeKind.Local).AddTicks(6696),
                             Password = "123456",
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 673, DateTimeKind.Local).AddTicks(7534),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 54, 32, 142, DateTimeKind.Local).AddTicks(1124),
                             User = "admin"
                         });
                 });
@@ -80,43 +82,43 @@ namespace MiniBlog.Data.Migrations
                         {
                             Id = 1,
                             Category = "Category1",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8368),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8396)
+                            CreateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7307),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7332)
                         },
                         new
                         {
                             Id = 2,
                             Category = "Category2",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8464),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8466)
+                            CreateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7398),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7400)
                         },
                         new
                         {
                             Id = 3,
                             Category = "Category3",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8469),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8470)
+                            CreateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7403),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7405)
                         },
                         new
                         {
                             Id = 4,
                             Category = "Category4",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8473),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8474)
+                            CreateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7407),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7408)
                         },
                         new
                         {
                             Id = 5,
                             Category = "Category5",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8476),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8477)
+                            CreateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7410),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7412)
                         },
                         new
                         {
                             Id = 6,
                             Category = "Category6",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8484),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8486)
+                            CreateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7418),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 54, 32, 156, DateTimeKind.Local).AddTicks(7420)
                         });
                 });
 

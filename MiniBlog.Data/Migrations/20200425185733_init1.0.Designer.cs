@@ -9,8 +9,8 @@ using MiniBlog.Data;
 namespace MiniBlog.Data.Migrations
 {
     [DbContext(typeof(MiniBlogDbContext))]
-    [Migration("20200425180103_init")]
-    partial class init
+    [Migration("20200425185733_init1.0")]
+    partial class init10
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,6 +44,16 @@ namespace MiniBlog.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Admin");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateTime = new DateTime(2020, 4, 26, 2, 57, 32, 364, DateTimeKind.Local).AddTicks(2346),
+                            Password = "123456",
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 57, 32, 366, DateTimeKind.Local).AddTicks(5041),
+                            User = "admin"
+                        });
                 });
 
             modelBuilder.Entity("MiniBlog.Data.Dto.CategoryDto", b =>
@@ -66,6 +76,50 @@ namespace MiniBlog.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Category");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 2,
+                            Category = "Category2",
+                            CreateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1489),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1520)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Category = "Category3",
+                            CreateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1594),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1597)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Category = "Category4",
+                            CreateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1600),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1601)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Category = "Category5",
+                            CreateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1604),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1605)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Category = "Category6",
+                            CreateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1608),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1609)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Category = "Category6",
+                            CreateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1618),
+                            UpdateTime = new DateTime(2020, 4, 26, 2, 57, 32, 387, DateTimeKind.Local).AddTicks(1619)
+                        });
                 });
 
             modelBuilder.Entity("MiniBlog.Data.Dto.PictureDto", b =>

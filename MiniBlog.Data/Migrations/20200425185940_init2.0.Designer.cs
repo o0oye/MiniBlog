@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MiniBlog.Data;
 
 namespace MiniBlog.Data.Migrations
 {
     [DbContext(typeof(MiniBlogDbContext))]
-    partial class MiniBlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200425185940_init2.0")]
+    partial class init20
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
