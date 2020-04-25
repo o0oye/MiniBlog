@@ -1,0 +1,9 @@
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.deps.json
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.dll
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.pdb
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\obj\Debug\netstandard2.0\MiniBlog.Data.Dto.csprojAssemblyReference.cache
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\obj\Debug\netstandard2.0\MiniBlog.Data.Dto.csproj.CoreCompileInputs.cache
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\obj\Debug\netstandard2.0\MiniBlog.Data.Dto.AssemblyInfoInputs.cache
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\obj\Debug\netstandard2.0\MiniBlog.Data.Dto.AssemblyInfo.cs
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\obj\Debug\netstandard2.0\MiniBlog.Data.Dto.dll
+D:\working2020\MiniBlog\MiniBlog.Data.Dto\obj\Debug\netstandard2.0\MiniBlog.Data.Dto.pdb

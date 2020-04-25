@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j9+uZiJsLl6tIhwdbZJxblFmgda/YVwpzUo572DE0EWcwDXjh/rzGkZs8+sO7Kit6kp0nDMWBlAEELNDzHF/uA==",
+  "success": true,
+  "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.App.UI\\MiniBlog.App.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}

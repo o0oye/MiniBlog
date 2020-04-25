@@ -1,0 +1,8 @@
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.Plugin.deps.json
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.Plugin.dll
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.Plugin.pdb
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.csproj.CoreCompileInputs.cache
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.AssemblyInfoInputs.cache
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.AssemblyInfo.cs
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.dll
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.pdb

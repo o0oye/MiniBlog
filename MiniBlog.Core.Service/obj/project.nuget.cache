@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CjyOiiCgIsBRLvEB1IAu4dS931qGMAb1eTXdvV1/CxxAZBvd/TY5xVXykRoj3D7L6SOROHTtzD1mU2mTitG9Hw==",
+  "success": true,
+  "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
