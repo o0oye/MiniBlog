@@ -12,9 +12,9 @@ namespace MiniBlog.Data.Configurations
             builder.Property(e => e.Category)
                 .HasMaxLength(64)
                 .IsRequired();
-            builder.HasMany<PostDto>()
-                .WithOne(e => e.Category)
-                .HasForeignKey(e => e.CategoryId);
+            builder.HasMany(m=>m.Posts)
+                .WithOne(o => o.Category)
+                .HasForeignKey(k => k.CategoryId);
         }
     }
 }

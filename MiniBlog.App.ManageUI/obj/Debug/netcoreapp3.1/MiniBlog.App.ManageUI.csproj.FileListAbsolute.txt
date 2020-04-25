@@ -27,8 +27,6 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.A
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.Views.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.Views.pdb
-D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.csproj.CoreCompileInputs.cache
-D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.MvcApplicationPartsAssemblyInfo.cache
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.Views.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.pdb
@@ -63,3 +61,6 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.C
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.Dto.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.IData.pdb
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.csproj.CoreCompileInputs.cache
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.MvcApplicationPartsAssemblyInfo.cache
