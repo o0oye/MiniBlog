@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MiniBlog.Data.Dto
+﻿namespace MiniBlog.Data.Dto
 {
     public interface IDtoBase<TPrimaryKey>
     {
