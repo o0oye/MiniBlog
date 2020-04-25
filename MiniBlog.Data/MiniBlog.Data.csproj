@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MiniBlog.Data.IData\MiniBlog.Data.IData.csproj" />
+  </ItemGroup>
+
 </Project>

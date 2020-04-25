@@ -9,4 +9,8 @@
     <Folder Include="UnitOfWork\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MiniBlog.Data.Dto\MiniBlog.Data.Dto.csproj" />
+  </ItemGroup>
+
 </Project>

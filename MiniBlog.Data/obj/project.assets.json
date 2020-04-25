@@ -307,6 +307,29 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "MiniBlog.Data.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/MiniBlog.Data.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniBlog.Data.Dto.dll": {}
+        }
+      },
+      "MiniBlog.Data.IData/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MiniBlog.Data.Dto": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MiniBlog.Data.IData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniBlog.Data.IData.dll": {}
+        }
       }
     }
   },
@@ -1014,11 +1037,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MiniBlog.Data.Dto/1.0.0": {
+      "type": "project",
+      "path": "../MiniBlog.Data.Dto/MiniBlog.Data.Dto.csproj",
+      "msbuildProject": "../MiniBlog.Data.Dto/MiniBlog.Data.Dto.csproj"
+    },
+    "MiniBlog.Data.IData/1.0.0": {
+      "type": "project",
+      "path": "../MiniBlog.Data.IData/MiniBlog.Data.IData.csproj",
+      "msbuildProject": "../MiniBlog.Data.IData/MiniBlog.Data.IData.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.EntityFrameworkCore >= 3.1.3",
+      "MiniBlog.Data.IData >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -1047,7 +1081,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
+              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

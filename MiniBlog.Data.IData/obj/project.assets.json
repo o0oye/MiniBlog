@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "MiniBlog.Data.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/MiniBlog.Data.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniBlog.Data.Dto.dll": {}
+        }
       }
     }
   },
@@ -172,10 +182,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "MiniBlog.Data.Dto/1.0.0": {
+      "type": "project",
+      "path": "../MiniBlog.Data.Dto/MiniBlog.Data.Dto.csproj",
+      "msbuildProject": "../MiniBlog.Data.Dto/MiniBlog.Data.Dto.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "MiniBlog.Data.Dto >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -204,7 +220,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj": {
+              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
