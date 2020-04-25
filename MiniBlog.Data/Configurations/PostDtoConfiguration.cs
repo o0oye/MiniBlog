@@ -5,7 +5,7 @@ using MiniBlog.Data.Dto;
 
 namespace MiniBlog.Data.Configurations
 {
-    public class PostConfiguration : IEntityTypeConfiguration<PostDto>
+    public class PostDtoConfiguration : IEntityTypeConfiguration<PostDto>
     {
         public void Configure(EntityTypeBuilder<PostDto> builder)
         {
@@ -15,6 +15,11 @@ namespace MiniBlog.Data.Configurations
                 .IsRequired();
             builder.Property(e => e.Summary)
                 .HasMaxLength(256);
+            builder.Property(e => e.Content)
+                .IsRequired()
+                .HasColumnType("text");
+            builder.Property(m => m.Icon)
+                 .HasMaxLength(256);
         }
     }
 }

@@ -4,7 +4,7 @@ using MiniBlog.Data.Dto;
 
 namespace MiniBlog.Data.Configurations
 {
-    public class CategoryConfiguration : IEntityTypeConfiguration<CategoryDto>
+    public class CategoryDtoConfiguration : IEntityTypeConfiguration<CategoryDto>
     {
         public void Configure(EntityTypeBuilder<CategoryDto> builder)
         {
@@ -12,6 +12,9 @@ namespace MiniBlog.Data.Configurations
             builder.Property(e => e.Category)
                 .HasMaxLength(64)
                 .IsRequired();
+            builder.HasMany<PostDto>()
+                .WithOne(e => e.Category)
+                .HasForeignKey(e => e.CategoryId);
         }
     }
 }

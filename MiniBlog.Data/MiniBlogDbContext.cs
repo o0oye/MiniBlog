@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MiniBlog.Data.Dto;
+using MiniBlog.Data.Configurations;
 
 namespace MiniBlog.Data
 {
@@ -10,7 +11,10 @@ namespace MiniBlog.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.ApplyConfiguration(new AdminDtoConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryDtoConfiguration());
+            modelBuilder.ApplyConfiguration(new PostDtoConfiguration());
+            modelBuilder.ApplyConfiguration(new PictureDtoConfiguration());
             base.OnModelCreating(modelBuilder);
         }
 
