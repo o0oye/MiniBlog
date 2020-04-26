@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NudFi+yDw0NaJMXwuljQLZqARCqUy4VGPXYjpT6nqrKXWOSAOIWtJTcjOWseh7HcXn4JGpDsxBbkHjJpcjccMg==",
+  "dgSpecHash": "eMbs+Mz0rfh05RWCjOozOF6Dhqv+9xGTdmq3nrOL1FvB6xmes1tNC+uLw1mwJy+4j0/UbPm88wDnXnSEaIsQ0g==",
   "success": true,
   "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj",
   "expectedPackageFiles": [
@@ -35,7 +35,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

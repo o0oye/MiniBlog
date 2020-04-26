@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mKbZaHywpTutHXOJwNSVcX1XN9X6mFblQ7uuBPkqVmA92nwqdNI+qMMGh/ofKb/t0JhPdsjdzHM4/SwMkxJSPg==",
+  "dgSpecHash": "xBhtM1sBO2pTxI7jsQ8L3KBp+nK83XUbTc95iEIJlhG1oMS6OErbfNl77Ss9YofTP41CTrt6mJhS56GhF4Oh/A==",
   "success": true,
   "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.App.ManageUI\\MiniBlog.App.ManageUI.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,8 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }
