@@ -308,6 +308,19 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "MiniBlog.Core.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/MiniBlog.Core.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniBlog.Core.ViewModels.dll": {}
+        }
+      },
       "MiniBlog.Data.Dto/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1042,6 +1055,11 @@
         "version.txt"
       ]
     },
+    "MiniBlog.Core.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../MiniBlog.Core.ViewModels/MiniBlog.Core.ViewModels.csproj",
+      "msbuildProject": "../MiniBlog.Core.ViewModels/MiniBlog.Core.ViewModels.csproj"
+    },
     "MiniBlog.Data.Dto/1.0.0": {
       "type": "project",
       "path": "../MiniBlog.Data.Dto/MiniBlog.Data.Dto.csproj",
@@ -1055,6 +1073,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "MiniBlog.Core.ViewModels >= 1.0.0",
       "MiniBlog.Data.Dto >= 1.0.0",
       "MiniBlog.Data.IData >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
@@ -1086,6 +1105,9 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+            "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
+              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj"
+            },
             "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj": {
               "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj"
             },

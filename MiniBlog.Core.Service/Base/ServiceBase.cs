@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using MiniBlog.Data.Dto;
 using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
@@ -9,13 +11,24 @@ namespace MiniBlog.Core.Service
         where TEntity : class, IDtoBase<TPrimaryKey>
     {
         //注入工作单元
-        private readonly IUnitOfWork _unitOfWork;
+        public IUnitOfWork _UnitOfWork { get; set; }
+
         //注入仓储
-        private readonly IRepository<TEntity, TPrimaryKey> _repository;
+        public IRepository<TEntity, TPrimaryKey> _Repository { get; set; }
+
+        //返回可远程查询
+        public IQueryable<TEntity> _Queryable { get => _Repository.GetQueryable(); }
+
         public ServiceBase(IUnitOfWork unitOfWork, IRepository<TEntity, TPrimaryKey> repository)
         {
-            _unitOfWork = unitOfWork;
-            _repository = repository;
+            _UnitOfWork = unitOfWork;
+            _Repository = repository;
+        }
+
+        //获取实体
+        public async ValueTask<TEntity> GetEntity(TPrimaryKey primaryKey)
+        {
+           return await _Repository.GetEntity(primaryKey);
         }
     }
 }

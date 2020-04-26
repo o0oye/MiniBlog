@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8/3C+CqKtF6jsMTaks5CtJZ3YAWbqzVl/RM6XXTEBxy/Qg/zY46STdnN+O+iRtEOBU80gSP9SsrIuCebVfnPZw==",
+  "dgSpecHash": "8TQzDOCJKnWqsetmA5uoJfMXvF1Q1+7NkL1ub9IDhyN0iJRBH6GW11O7KS6LmhkhAqbBFaUnwqPTRoyaxiYSvA==",
   "success": true,
   "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -12,3 +12,5 @@ D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog
 D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Data.IData.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.IService\obj\Debug\netstandard2.0\MiniBlog.Core.IService.csproj.CopyComplete
+D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.dll
+D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb

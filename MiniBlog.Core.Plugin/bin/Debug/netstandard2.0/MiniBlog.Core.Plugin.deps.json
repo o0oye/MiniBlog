@@ -342,6 +342,7 @@
       },
       "MiniBlog.Core.IService/1.0.0": {
         "dependencies": {
+          "MiniBlog.Core.ViewModels": "1.0.0",
           "MiniBlog.Data.Dto": "1.0.0",
           "MiniBlog.Data.IData": "1.0.0"
         },
@@ -355,6 +356,14 @@
         },
         "runtime": {
           "MiniBlog.Core.Service.dll": {}
+        }
+      },
+      "MiniBlog.Core.ViewModels/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "runtime": {
+          "MiniBlog.Core.ViewModels.dll": {}
         }
       },
       "MiniBlog.Data/1.0.0": {
@@ -619,6 +628,11 @@
       "sha512": ""
     },
     "MiniBlog.Core.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MiniBlog.Core.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

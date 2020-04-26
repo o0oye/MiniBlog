@@ -312,6 +312,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MiniBlog.Core.ViewModels": "1.0.0",
           "MiniBlog.Data.Dto": "1.0.0",
           "MiniBlog.Data.IData": "1.0.0"
         },
@@ -320,6 +321,19 @@
         },
         "runtime": {
           "bin/placeholder/MiniBlog.Core.IService.dll": {}
+        }
+      },
+      "MiniBlog.Core.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/MiniBlog.Core.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniBlog.Core.ViewModels.dll": {}
         }
       },
       "MiniBlog.Data.Dto/1.0.0": {
@@ -1060,6 +1074,11 @@
       "type": "project",
       "path": "../MiniBlog.Core.IService/MiniBlog.Core.IService.csproj",
       "msbuildProject": "../MiniBlog.Core.IService/MiniBlog.Core.IService.csproj"
+    },
+    "MiniBlog.Core.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../MiniBlog.Core.ViewModels/MiniBlog.Core.ViewModels.csproj",
+      "msbuildProject": "../MiniBlog.Core.ViewModels/MiniBlog.Core.ViewModels.csproj"
     },
     "MiniBlog.Data.Dto/1.0.0": {
       "type": "project",
