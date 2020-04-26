@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using MiniBlog.Data.Dto;
 
-namespace MiniBlog.Data.IData.Repositories
+namespace MiniBlog.Data.IData
 {
     public interface IRepository<TEntity, TPrimaryKey> where TEntity : class, IDtoBase<TPrimaryKey>
     {

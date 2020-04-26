@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using MiniBlog.Data.Dto;
-using MiniBlog.Data.IData.Repositories;
+using MiniBlog.Data.IData;
 
-namespace MiniBlog.Data.Repositories
+namespace MiniBlog.Data
 {
     public class Repository<TEntity, TPrimaryKey> : IRepository<TEntity, TPrimaryKey>
         where TEntity : class, IDtoBase<TPrimaryKey>
