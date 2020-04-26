@@ -7,3 +7,8 @@ D:\working2020\MiniBlog\MiniBlog.Core.IService\obj\Debug\netstandard2.0\MiniBlog
 D:\working2020\MiniBlog\MiniBlog.Core.IService\obj\Debug\netstandard2.0\MiniBlog.Core.IService.dll
 D:\working2020\MiniBlog\MiniBlog.Core.IService\obj\Debug\netstandard2.0\MiniBlog.Core.IService.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.IService\obj\Debug\netstandard2.0\MiniBlog.Core.IService.csprojAssemblyReference.cache
+D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.dll
+D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Data.IData.dll
+D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.pdb
+D:\working2020\MiniBlog\MiniBlog.Core.IService\bin\Debug\netstandard2.0\MiniBlog.Data.IData.pdb
+D:\working2020\MiniBlog\MiniBlog.Core.IService\obj\Debug\netstandard2.0\MiniBlog.Core.IService.csproj.CopyComplete

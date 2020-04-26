@@ -24,6 +24,7 @@ namespace MiniBlog.App.ManageUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddMiniBlogBase();
             services.AddMiniBlogMySqlDbContext(Configuration.GetConnectionString("MysqlConnection"));
         }
 

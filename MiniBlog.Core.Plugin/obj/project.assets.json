@@ -379,6 +379,33 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "MiniBlog.Core.IService/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MiniBlog.Data.Dto": "1.0.0",
+          "MiniBlog.Data.IData": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MiniBlog.Core.IService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniBlog.Core.IService.dll": {}
+        }
+      },
+      "MiniBlog.Core.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MiniBlog.Core.IService": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MiniBlog.Core.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniBlog.Core.Service.dll": {}
+        }
+      },
       "MiniBlog.Data/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1292,6 +1319,16 @@
         "version.txt"
       ]
     },
+    "MiniBlog.Core.IService/1.0.0": {
+      "type": "project",
+      "path": "../MiniBlog.Core.IService/MiniBlog.Core.IService.csproj",
+      "msbuildProject": "../MiniBlog.Core.IService/MiniBlog.Core.IService.csproj"
+    },
+    "MiniBlog.Core.Service/1.0.0": {
+      "type": "project",
+      "path": "../MiniBlog.Core.Service/MiniBlog.Core.Service.csproj",
+      "msbuildProject": "../MiniBlog.Core.Service/MiniBlog.Core.Service.csproj"
+    },
     "MiniBlog.Data/1.0.0": {
       "type": "project",
       "path": "../MiniBlog.Data/MiniBlog.Data.csproj",
@@ -1310,8 +1347,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "MiniBlog.Core.IService >= 1.0.0",
+      "MiniBlog.Core.Service >= 1.0.0",
       "MiniBlog.Data >= 1.0.0",
-      "MiniBlog.Data.IData >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -1341,8 +1379,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
-              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj"
+            "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
+              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj"
+            },
+            "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj": {
+              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj"
             },
             "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj": {
               "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj"

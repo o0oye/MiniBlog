@@ -9,8 +9,9 @@
     ".NETStandard,Version=v2.0/": {
       "MiniBlog.Core.Plugin/1.0.0": {
         "dependencies": {
+          "MiniBlog.Core.IService": "1.0.0",
+          "MiniBlog.Core.Service": "1.0.0",
           "MiniBlog.Data": "1.0.0",
-          "MiniBlog.Data.IData": "1.0.0",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -339,6 +340,23 @@
           }
         }
       },
+      "MiniBlog.Core.IService/1.0.0": {
+        "dependencies": {
+          "MiniBlog.Data.Dto": "1.0.0",
+          "MiniBlog.Data.IData": "1.0.0"
+        },
+        "runtime": {
+          "MiniBlog.Core.IService.dll": {}
+        }
+      },
+      "MiniBlog.Core.Service/1.0.0": {
+        "dependencies": {
+          "MiniBlog.Core.IService": "1.0.0"
+        },
+        "runtime": {
+          "MiniBlog.Core.Service.dll": {}
+        }
+      },
       "MiniBlog.Data/1.0.0": {
         "dependencies": {
           "MiniBlog.Data.IData": "1.0.0",
@@ -594,6 +612,16 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "MiniBlog.Core.IService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MiniBlog.Core.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MiniBlog.Data/1.0.0": {
       "type": "project",

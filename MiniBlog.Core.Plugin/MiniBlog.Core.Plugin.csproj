@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MiniBlog.Data.IData\MiniBlog.Data.IData.csproj" />
+    <ProjectReference Include="..\MiniBlog.Core.IService\MiniBlog.Core.IService.csproj" />
+    <ProjectReference Include="..\MiniBlog.Core.Service\MiniBlog.Core.Service.csproj" />
     <ProjectReference Include="..\MiniBlog.Data\MiniBlog.Data.csproj" />
   </ItemGroup>
 
