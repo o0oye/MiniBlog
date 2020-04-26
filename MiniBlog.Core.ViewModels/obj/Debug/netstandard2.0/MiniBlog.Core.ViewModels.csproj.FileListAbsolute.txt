@@ -6,4 +6,3 @@ D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBl
 D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.AssemblyInfo.cs
 D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.dll
 D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
-D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.csprojAssemblyReference.cache
