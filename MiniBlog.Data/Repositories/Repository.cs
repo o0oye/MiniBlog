@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using MiniBlog.Data.Dto;
+using MiniBlog.Data.Entity;
 using MiniBlog.Data.IData;
 
 namespace MiniBlog.Data
 {
     public class Repository<TEntity, TPrimaryKey> : IRepository<TEntity, TPrimaryKey>
-        where TEntity : class, IDtoBase<TPrimaryKey>
+        where TEntity : class, IEntityBase<TPrimaryKey>
     {
         private readonly MiniBlogDbContext _miniBlogDbContext;
         private DbSet<TEntity> _dbSet => _miniBlogDbContext.Set<TEntity>();

@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using MiniBlog.Data.Dto;
+using MiniBlog.Data.Entity;
 using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
 
 namespace MiniBlog.Core.Service
 {
     public class ServiceBase<TEntity, TPrimaryKey> : IServiceBase<TEntity, TPrimaryKey>
-        where TEntity : class, IDtoBase<TPrimaryKey>
+        where TEntity : class, IEntityBase<TPrimaryKey>
     {
         //注入工作单元
         public IUnitOfWork _UnitOfWork { get; set; }

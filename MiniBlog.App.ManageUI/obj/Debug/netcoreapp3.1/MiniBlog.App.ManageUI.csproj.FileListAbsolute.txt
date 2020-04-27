@@ -54,11 +54,9 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\Pomelo.Ent
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.Plugin.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.dll
-D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.Dto.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.IData.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.Plugin.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.pdb
-D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.Dto.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.IData.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.IService.dll
@@ -143,3 +141,5 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.C
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.ViewModels.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Admin.cshtml.g.cs
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.Entity.dll
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Data.Entity.pdb

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using MiniBlog.Data.Dto;
+using MiniBlog.Data.Entity;
 using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
 using MiniBlog.Core.ViewModels.PostView;
 
 namespace MiniBlog.Core.Service
 {
-    public class AdminService : ServiceBase<AdminDto, int>, IAdminService
+    public class AdminService : ServiceBase<AdminEntity, int>, IAdminService
     {
-        public AdminService(IUnitOfWork unitOfWork, IRepository<AdminDto, int> repository)
+        public AdminService(IUnitOfWork unitOfWork, IRepository<AdminEntity, int> repository)
             : base(unitOfWork, repository) { }
 
         //登陆

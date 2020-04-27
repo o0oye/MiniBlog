@@ -8,11 +8,11 @@ D:\working2020\MiniBlog\MiniBlog.Core.Service\obj\Debug\netstandard2.0\MiniBlog.
 D:\working2020\MiniBlog\MiniBlog.Core.Service\obj\Debug\netstandard2.0\MiniBlog.Core.Service.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Service\obj\Debug\netstandard2.0\MiniBlog.Core.Service.csprojAssemblyReference.cache
 D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Core.IService.dll
-D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Data.IData.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Core.IService.pdb
-D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Data.IData.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Service\obj\Debug\netstandard2.0\MiniBlog.Core.Service.csproj.CopyComplete
 D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
+D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.dll
+D:\working2020\MiniBlog\MiniBlog.Core.Service\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb

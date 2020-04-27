@@ -2,11 +2,11 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using MiniBlog.Data.Dto;
+using MiniBlog.Data.Entity;
 
 namespace MiniBlog.Data.IData
 {
-    public interface IRepository<TEntity, TPrimaryKey> where TEntity : class, IDtoBase<TPrimaryKey>
+    public interface IRepository<TEntity, TPrimaryKey> where TEntity : class, IEntityBase<TPrimaryKey>
     {
         //返回可以远程查询
         IQueryable<TEntity> GetQueryable();

@@ -343,7 +343,7 @@
       "MiniBlog.Core.IService/1.0.0": {
         "dependencies": {
           "MiniBlog.Core.ViewModels": "1.0.0",
-          "MiniBlog.Data.Dto": "1.0.0",
+          "MiniBlog.Data.Entity": "1.0.0",
           "MiniBlog.Data.IData": "1.0.0"
         },
         "runtime": {
@@ -375,15 +375,15 @@
           "MiniBlog.Data.dll": {}
         }
       },
-      "MiniBlog.Data.Dto/1.0.0": {
+      "MiniBlog.Data.Entity/1.0.0": {
         "runtime": {
-          "MiniBlog.Data.Dto.dll": {}
+          "MiniBlog.Data.Entity.dll": {}
         }
       },
       "MiniBlog.Data.IData/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.3",
-          "MiniBlog.Data.Dto": "1.0.0",
+          "MiniBlog.Data.Entity": "1.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -642,7 +642,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MiniBlog.Data.Dto/1.0.0": {
+    "MiniBlog.Data.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

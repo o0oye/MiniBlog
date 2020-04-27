@@ -1,8 +1,8 @@
-﻿using MiniBlog.Data.Dto;
+﻿using MiniBlog.Data.Entity;
 
 namespace MiniBlog.Core.IService
 {
-    public interface IPictureService : IServiceBase<PictureDto, long>
+    public interface IPictureService : IServiceBase<PictureEntity, long>
     {
     }
 }

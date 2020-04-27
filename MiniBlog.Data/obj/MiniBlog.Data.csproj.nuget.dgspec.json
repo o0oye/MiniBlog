@@ -4,12 +4,12 @@
     "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj": {}
   },
   "projects": {
-    "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj": {
+    "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj",
-        "projectName": "MiniBlog.Data.Dto",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj",
+        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj",
+        "projectName": "MiniBlog.Data.Entity",
+        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
         "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\obj\\",
         "projectStyle": "PackageReference",
@@ -82,8 +82,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Dto.csproj"
+              "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj": {
+                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj"
               }
             }
           }

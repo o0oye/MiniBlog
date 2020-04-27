@@ -1,8 +1,8 @@
-﻿using MiniBlog.Data.Dto;
+﻿using MiniBlog.Data.Entity;
 
 namespace MiniBlog.Core.IService
 {
-    public interface ICategoryService : IServiceBase<AdminDto, int>
+    public interface ICategoryService : IServiceBase<AdminEntity, int>
     {
     }
 }

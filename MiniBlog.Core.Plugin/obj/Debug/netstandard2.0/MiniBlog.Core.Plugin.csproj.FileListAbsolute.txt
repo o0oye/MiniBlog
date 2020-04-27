@@ -8,11 +8,9 @@ D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.C
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.csprojAssemblyReference.cache
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.dll
-D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.IData.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.IData.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.pdb
-D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.Dto.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\obj\Debug\netstandard2.0\MiniBlog.Core.Plugin.csproj.CopyComplete
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.IService.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.Service.dll
@@ -20,3 +18,5 @@ D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.C
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.Service.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.dll
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb

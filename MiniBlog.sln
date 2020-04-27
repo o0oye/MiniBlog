@@ -21,11 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniBlog.Core.Plugin", "Min
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniBlog.Core.ViewModels", "MiniBlog.Core.ViewModels\MiniBlog.Core.ViewModels.csproj", "{D5AE84AE-455C-40E5-9F1E-E15C6C559BC0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniBlog.Data.Dto", "MiniBlog.Data.Dto\MiniBlog.Data.Dto.csproj", "{77413BFD-890B-4DB8-B847-7BD2F50B291B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniBlog.Data.Entity", "MiniBlog.Data.Dto\MiniBlog.Data.Entity.csproj", "{77413BFD-890B-4DB8-B847-7BD2F50B291B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniBlog.Data.IData", "MiniBlog.Data.IData\MiniBlog.Data.IData.csproj", "{20D1A0C8-7407-4331-80A7-9B9C07CDDDFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBlog.Data", "MiniBlog.Data\MiniBlog.Data.csproj", "{A7D73E10-AB0F-42CC-806C-FDC5D010481A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniBlog.Data", "MiniBlog.Data\MiniBlog.Data.csproj", "{A7D73E10-AB0F-42CC-806C-FDC5D010481A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
