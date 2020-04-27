@@ -10,7 +10,6 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.A
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.TagHelpers.output.cache
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.App.ManageUI.RazorCoreGenerate.cache
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -143,3 +142,4 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\MiniBlog.A
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.ViewModels.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.ViewModels.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Admin.cshtml.g.cs

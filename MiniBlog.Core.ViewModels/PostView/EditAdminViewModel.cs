@@ -3,8 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MiniBlog.Core.ViewModels.PostView
 {
-    public class LoginViewModel
+    public class EditAdminViewModel
     {
+        public int Id { get; set; }
 
         [DisplayName("用户")]
         [Required(ErrorMessage = "{0}名漏了喔")]

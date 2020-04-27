@@ -17,7 +17,6 @@ namespace MiniBlog.Data
             modelBuilder.ApplyConfiguration(new PictureDtoConfiguration());
             base.OnModelCreating(modelBuilder);
         }
-
         public DbSet<AdminDto> Admin { get; set; }
         public DbSet<PostDto> Post { get; set; }
         public DbSet<CategoryDto> Category { get; set; }

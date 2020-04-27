@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,9 +20,23 @@ namespace MiniBlog.App.ManageUI
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
             services.AddMiniBlogBase();
             services.AddMiniBlogMySqlDbContext(Configuration.GetConnectionString("MysqlConnection"));
+            services.AddAuthentication(o =>
+            {
+                o.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                o.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                o.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
+            {
+                //µÇÂ¼µØÖ·
+                o.LoginPath = "/Account/Login";
+                o.Cookie.Name = "miniblogcookie";
+                o.Cookie.Path = "/";
+                o.Cookie.HttpOnly = true;
+                o.ExpireTimeSpan = new TimeSpan(0, 30, 0);
+            });
+            services.AddControllersWithViews();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -44,6 +55,7 @@ namespace MiniBlog.App.ManageUI
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
