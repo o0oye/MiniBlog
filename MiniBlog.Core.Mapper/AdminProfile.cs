@@ -4,9 +4,9 @@ using MiniBlog.Core.ViewModels.PostView;
 
 namespace MiniBlog.Core.Mapper
 {
-    public class AdminMapperProfile : Profile
+    public class AdminProfile : Profile, IAutoRegister
     {
-        public AdminMapperProfile()
+        public AdminProfile()
         {
             CreateMap<AdminEntity, EditAdminViewModel>().ReverseMap();
         }

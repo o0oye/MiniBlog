@@ -30,8 +30,8 @@ namespace MiniBlog.Core.Plugin.Injection
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IPostService, PostService>();
             services.AddTransient<IPictureService, PictureService>();
-            //注入映射
-            services.AddAutoMapper(typeof(AdminMapperProfile));
+            //注入自动映射
+            services.AddAutoMapper(AutoRegister.RegisterType());
             return services;
         }
     }
