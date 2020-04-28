@@ -1062,8 +1062,8 @@
     },
     "MiniBlog.Data.Entity/1.0.0": {
       "type": "project",
-      "path": "../MiniBlog.Data.Dto/MiniBlog.Data.Entity.csproj",
-      "msbuildProject": "../MiniBlog.Data.Dto/MiniBlog.Data.Entity.csproj"
+      "path": "../MiniBlog.Data.Entity/MiniBlog.Data.Entity.csproj",
+      "msbuildProject": "../MiniBlog.Data.Entity/MiniBlog.Data.Entity.csproj"
     },
     "MiniBlog.Data.IData/1.0.0": {
       "type": "project",
@@ -1074,7 +1074,6 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "MiniBlog.Core.ViewModels >= 1.0.0",
-      "MiniBlog.Data.Entity >= 1.0.0",
       "MiniBlog.Data.IData >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -1107,9 +1106,6 @@
           "projectReferences": {
             "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
               "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj"
-            },
-            "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj": {
-              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj"
             },
             "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
               "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj"

@@ -1029,8 +1029,8 @@
     },
     "MiniBlog.Data.Entity/1.0.0": {
       "type": "project",
-      "path": "../MiniBlog.Data.Dto/MiniBlog.Data.Entity.csproj",
-      "msbuildProject": "../MiniBlog.Data.Dto/MiniBlog.Data.Entity.csproj"
+      "path": "../MiniBlog.Data.Entity/MiniBlog.Data.Entity.csproj",
+      "msbuildProject": "../MiniBlog.Data.Entity/MiniBlog.Data.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1067,8 +1067,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj": {
-              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj"
+            "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj": {
+              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj"
             }
           }
         }

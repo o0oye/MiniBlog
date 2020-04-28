@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MiniBlog.Core.ViewModels\MiniBlog.Core.ViewModels.csproj" />
-    <ProjectReference Include="..\MiniBlog.Data.Dto\MiniBlog.Data.Entity.csproj" />
     <ProjectReference Include="..\MiniBlog.Data.IData\MiniBlog.Data.IData.csproj" />
   </ItemGroup>
 

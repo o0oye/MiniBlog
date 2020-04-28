@@ -276,7 +276,6 @@
       "MiniBlog.Core.IService/1.0.0": {
         "dependencies": {
           "MiniBlog.Core.ViewModels": "1.0.0",
-          "MiniBlog.Data.Entity": "1.0.0",
           "MiniBlog.Data.IData": "1.0.0"
         },
         "runtime": {

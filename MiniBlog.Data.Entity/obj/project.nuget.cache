@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HlwMez4qduQfXK6DFdiI8ZfAE/DRnxEe31SV5w4ZemLJuu2Lr/OLOlZd8DgIZ+nhRPmBY919f9iIDfynBiwttQ==",
+  "dgSpecHash": "LPFz8AcKZs1u+G3zkvl9+T6MW6oZ8bPlDPOBh9uV7uHZnWoUwnf7Xl25yn2MKF+py/dg4gmGoAbz7jdNc65FQg==",
   "success": true,
-  "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Dto\\MiniBlog.Data.Entity.csproj",
+  "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

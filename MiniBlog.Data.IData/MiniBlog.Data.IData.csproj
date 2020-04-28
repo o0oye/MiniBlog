@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MiniBlog.Data.Dto\MiniBlog.Data.Entity.csproj" />
+    <ProjectReference Include="..\MiniBlog.Data.Entity\MiniBlog.Data.Entity.csproj" />
   </ItemGroup>
 
 </Project>

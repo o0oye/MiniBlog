@@ -1280,8 +1280,8 @@
     },
     "MiniBlog.Data.Entity/1.0.0": {
       "type": "project",
-      "path": "../MiniBlog.Data.Dto/MiniBlog.Data.Entity.csproj",
-      "msbuildProject": "../MiniBlog.Data.Dto/MiniBlog.Data.Entity.csproj"
+      "path": "../MiniBlog.Data.Entity/MiniBlog.Data.Entity.csproj",
+      "msbuildProject": "../MiniBlog.Data.Entity/MiniBlog.Data.Entity.csproj"
     },
     "MiniBlog.Data.IData/1.0.0": {
       "type": "project",
