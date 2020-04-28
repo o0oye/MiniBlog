@@ -3,8 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using AutoMapper;
 using MiniBlog.Data;
 using MiniBlog.Data.IData;
-using MiniBlog.Core.Service;
-using MiniBlog.Core.IService;
 using MiniBlog.Core.Mapper;
 
 namespace MiniBlog.Core.Plugin.Injection
@@ -17,7 +15,7 @@ namespace MiniBlog.Core.Plugin.Injection
             services.AddDbContext<MiniBlogDbContext>(options => options.UseMySql(connection));
             return services;
         }
-        
+
         //注入系统基础设施
         public static IServiceCollection AddMiniBlogBase(this IServiceCollection services)
         {
@@ -25,12 +23,13 @@ namespace MiniBlog.Core.Plugin.Injection
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             //注入仓储
             services.AddTransient(typeof(IRepository<,>), typeof(Repository<,>));
-            //注入服务层
-            services.AddTransient<IAdminService, AdminService>();
-            services.AddTransient<ICategoryService, CategoryService>();
-            services.AddTransient<IPostService, PostService>();
-            services.AddTransient<IPictureService, PictureService>();
-            //注入自动映射
+            //自动注入是服务层
+            var registers = AutoInjection.RegisterType();
+            foreach (var item in registers)
+            {
+                services.AddTransient(item.itype, item.type);
+            }
+            //自动注入映射
             services.AddAutoMapper(AutoRegister.RegisterType());
             return services;
         }
