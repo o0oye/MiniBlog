@@ -4,7 +4,7 @@ using MiniBlog.Core.ViewModels.PostView;
 
 namespace MiniBlog.Core.Mapper
 {
-    public class AdminProfile : Profile, IAutoRegister
+    public class AdminProfile : Profile
     {
         public AdminProfile()
         {

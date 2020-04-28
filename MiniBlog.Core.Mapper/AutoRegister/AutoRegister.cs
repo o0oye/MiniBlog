@@ -9,7 +9,7 @@ namespace MiniBlog.Core.Mapper
         //自动注册实体映射
         public static Type[] RegisterType()
         {
-            Assembly assembly = Assembly.GetAssembly(typeof(IAutoRegister));
+            Assembly assembly = Assembly.GetAssembly(typeof(AutoRegister));
             var types = assembly.GetTypes()
                  .Where(t => t.Name.Contains("Profile")).ToArray();
             return types;
