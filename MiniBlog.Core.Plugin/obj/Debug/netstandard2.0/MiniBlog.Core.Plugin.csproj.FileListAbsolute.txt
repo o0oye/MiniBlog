@@ -20,3 +20,5 @@ D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.C
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.Mapper.dll
+D:\working2020\MiniBlog\MiniBlog.Core.Plugin\bin\Debug\netstandard2.0\MiniBlog.Core.Mapper.pdb

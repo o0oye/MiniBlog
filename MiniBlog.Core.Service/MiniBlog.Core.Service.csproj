@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MiniBlog.Core.IService\MiniBlog.Core.IService.csproj" />
+    <ProjectReference Include="..\MiniBlog.Core.Mapper\MiniBlog.Core.Mapper.csproj" />
   </ItemGroup>
 
 </Project>

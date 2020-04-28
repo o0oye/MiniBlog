@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "c6pfoJ4vZhr3TNtDBRr9vIBCzM8QhVlKdfwgzj2Yxc5HZj6tM9eL06tuGEbYoHcKBjUv0fKb7t26PVG6ocuVbg==",
+  "dgSpecHash": "8FMuy2pyjX1ptbnw/kPp7M2VvWGsvbDoPMJXWl25lvY3+cwT/GTv8YWcaTzWakbDEFE+0WF0OKofpnFMcR4VhA==",
   "success": true,
   "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.App.ManageUI\\MiniBlog.App.ManageUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

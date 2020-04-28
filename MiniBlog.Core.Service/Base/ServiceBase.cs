@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using MiniBlog.Data.Entity;
 using MiniBlog.Core.IService;
@@ -28,7 +29,13 @@ namespace MiniBlog.Core.Service
         //获取实体
         public async ValueTask<TEntity> GetEntity(TPrimaryKey primaryKey)
         {
-           return await _Repository.GetEntity(primaryKey);
+            return await _Repository.GetEntity(primaryKey);
+        }
+
+        //更新实体
+        public TEntity UpdateEntity(TEntity entity)
+        {
+            return _Repository.UpdateEntity(entity).Entity;
         }
     }
 }

@@ -8,7 +8,7 @@ D:\working2020\MiniBlog\MiniBlog.Core.Mapper\bin\Debug\netstandard2.0\MiniBlog.D
 D:\working2020\MiniBlog\MiniBlog.Core.Mapper\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Mapper\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.Mapper\obj\Debug\netstandard2.0\MiniBlog.Core.Mapper.csprojAssemblyReference.cache
-D:\working2020\MiniBlog\MiniBlog.Core.Mapper\obj\Debug\netstandard2.0\MiniBlog.Core.Mapper.csproj.CoreCompileInputs.cache
 D:\working2020\MiniBlog\MiniBlog.Core.Mapper\obj\Debug\netstandard2.0\MiniBlog.Core.Mapper.csproj.CopyComplete
 D:\working2020\MiniBlog\MiniBlog.Core.Mapper\obj\Debug\netstandard2.0\MiniBlog.Core.Mapper.dll
 D:\working2020\MiniBlog\MiniBlog.Core.Mapper\obj\Debug\netstandard2.0\MiniBlog.Core.Mapper.pdb
+D:\working2020\MiniBlog\MiniBlog.Core.Mapper\obj\Debug\netstandard2.0\MiniBlog.Core.Mapper.csproj.CoreCompileInputs.cache

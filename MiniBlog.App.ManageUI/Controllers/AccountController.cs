@@ -19,6 +19,7 @@ namespace MiniBlog.App.ManageUI.Controllers
             _adminService = adminService;
         }
 
+        //登陆
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Login()
@@ -36,7 +37,7 @@ namespace MiniBlog.App.ManageUI.Controllers
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
             var user = loginViewModel.User;
-            var result = _adminService.Login(loginViewModel);
+            var result = await _adminService.Login(loginViewModel);
             if (result)
             {
                 var claim = new Claim(ClaimTypes.Name, user);
@@ -62,10 +63,24 @@ namespace MiniBlog.App.ManageUI.Controllers
             return RedirectToAction("Login");
         }
 
+        //修改管理员
         [HttpGet]
-        public IActionResult Admin()
+        public async Task<IActionResult> Admin()
         {
-            return View();
+            var editAdminViewModel = await _adminService.GetAdmin();
+            return View(editAdminViewModel);
+        }
+
+        //修改管理员
+        [HttpPost]
+        public async Task<IActionResult> Admin(EditAdminViewModel editAdminViewModel)
+        {
+            var result= await _adminService.UpdateAdmin(editAdminViewModel);
+            if (result > 0)
+            {
+                return RedirectToAction("LogOut");
+            }
+            return View(editAdminViewModel);
         }
     }
 }

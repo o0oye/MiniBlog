@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using AutoMapper;
 using MiniBlog.Data;
 using MiniBlog.Data.IData;
 using MiniBlog.Core.Service;
 using MiniBlog.Core.IService;
+using MiniBlog.Core.Mapper;
 
 namespace MiniBlog.Core.Plugin.Injection
 {
@@ -28,6 +30,8 @@ namespace MiniBlog.Core.Plugin.Injection
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IPostService, PostService>();
             services.AddTransient<IPictureService, PictureService>();
+            //注入映射
+            services.AddAutoMapper(typeof(AdminMapperProfile));
             return services;
         }
     }

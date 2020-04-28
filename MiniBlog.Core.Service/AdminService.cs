@@ -1,29 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+﻿using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using MiniBlog.Data.Entity;
 using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
 using MiniBlog.Core.ViewModels.PostView;
+using AutoMapper;
 
 namespace MiniBlog.Core.Service
 {
     public class AdminService : ServiceBase<AdminEntity, int>, IAdminService
     {
-        public AdminService(IUnitOfWork unitOfWork, IRepository<AdminEntity, int> repository)
-            : base(unitOfWork, repository) { }
+        private IMapper _Mapper;
+        public AdminService(IUnitOfWork unitOfWork, IRepository<AdminEntity, int> repository, IMapper mapper)
+            : base(unitOfWork, repository)
+        {
+            _Mapper = mapper;
+        }
 
         //登陆
-        public bool Login(LoginViewModel loginViewModel)
+        public async Task<bool> Login(LoginViewModel loginViewModel)
         {
-            var result = _Queryable.Where(m => m.User == loginViewModel.User.Trim() && m.Password == loginViewModel.Password.Trim())
-                 .FirstOrDefault();
+            var result = await _Queryable
+                .Where(m => m.User == loginViewModel.User && m.Password == loginViewModel.Password)
+                .AsNoTracking()
+                .FirstOrDefaultAsync();
             if (result == null)
             {
                 return false;
             }
             return true;
+        }
+
+        //获取管理员
+        public async Task<EditAdminViewModel> GetAdmin()
+        {
+            var adminEntity = await _Queryable.FirstOrDefaultAsync();
+            return _Mapper.Map<EditAdminViewModel>(adminEntity);
+        }
+
+        //更新
+        public async Task<int> UpdateAdmin(EditAdminViewModel editAdminViewModel)
+        {
+            var adminEntity = _Mapper.Map<AdminEntity>(editAdminViewModel);
+            UpdateEntity(adminEntity);
+            return await _UnitOfWork.SaveChangesAsync();
         }
     }
 }

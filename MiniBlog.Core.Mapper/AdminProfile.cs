@@ -4,11 +4,11 @@ using MiniBlog.Core.ViewModels.PostView;
 
 namespace MiniBlog.Core.Mapper
 {
-    public class AdminProfile: Profile
+    public class AdminMapperProfile : Profile
     {
-        public AdminProfile()
+        public AdminMapperProfile()
         {
-            CreateMap<AdminEntity, EditAdminViewModel>();
+            CreateMap<AdminEntity, EditAdminViewModel>().ReverseMap();
         }
     }
 }
