@@ -1869,6 +1869,7 @@
       },
       "MiniBlog.Core.Plugin/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Razor": "2.2.0",
           "MiniBlog.Core.IService": "1.0.0",
           "MiniBlog.Core.Mapper": "1.0.0",
           "MiniBlog.Core.Service": "1.0.0",

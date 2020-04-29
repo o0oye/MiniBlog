@@ -41,8 +41,7 @@ namespace MiniBlog.App.ManageUI.Controllers
             if (result)
             {
                 var claim = new Claim(ClaimTypes.Name, user);
-                var claims = new List<Claim>();
-                claims.Add(claim);
+                var claims = new List<Claim> { claim };
                 var claimsIdentity = new ClaimsIdentity(claims, "local");
                 var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);

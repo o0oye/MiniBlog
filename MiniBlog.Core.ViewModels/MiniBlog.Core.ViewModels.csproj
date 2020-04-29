@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ListView\" />
     <Folder Include="ShowView\" />
   </ItemGroup>
 

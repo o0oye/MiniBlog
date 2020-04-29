@@ -1,39 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using MiniBlog.App.ManageUI.Models;
+using MiniBlog.Core.IService;
+using MiniBlog.Core.Plugin;
 
 namespace MiniBlog.App.ManageUI.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IPictureService _pictureService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IPictureService pictureService)
         {
-            _logger = logger;
+            _pictureService = pictureService;
         }
 
+        //主页
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        //图片管理
+        [HttpGet]
+        public async Task<IActionResult> Pictures([FromQuery]int index)
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var options = new PagerOption
+            {
+                PageIndex = index,
+                PageSize = 3,
+            };
+            var result = await _pictureService.GetPagerAsync(options.PageIndex, options.PageSize);
+            options.Total = result.total;
+            ViewBag.Options = options;
+            return View(result.rows);
         }
     }
 }

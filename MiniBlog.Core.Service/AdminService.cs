@@ -11,11 +11,11 @@ namespace MiniBlog.Core.Service
 {
     public class AdminService : ServiceBase<AdminEntity, int>, IAdminService
     {
-        private IMapper _Mapper;
+        private IMapper _mapper;
         public AdminService(IUnitOfWork unitOfWork, IRepository<AdminEntity, int> repository, IMapper mapper)
             : base(unitOfWork, repository)
         {
-            _Mapper = mapper;
+            _mapper = mapper;
         }
 
         //登陆
@@ -36,13 +36,13 @@ namespace MiniBlog.Core.Service
         public async Task<EditAdminViewModel> GetAdmin()
         {
             var adminEntity = await _Queryable.FirstOrDefaultAsync();
-            return _Mapper.Map<EditAdminViewModel>(adminEntity);
+            return _mapper.Map<EditAdminViewModel>(adminEntity);
         }
 
         //更新
         public async Task<int> UpdateAdmin(EditAdminViewModel editAdminViewModel)
         {
-            var adminEntity = _Mapper.Map<AdminEntity>(editAdminViewModel);
+            var adminEntity = _mapper.Map<AdminEntity>(editAdminViewModel);
             UpdateEntity(adminEntity);
             return await _UnitOfWork.SaveChangesAsync();
         }

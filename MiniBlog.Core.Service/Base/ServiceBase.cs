@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MiniBlog.Data.Entity;
 using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
+using System.Collections.Generic;
 
 namespace MiniBlog.Core.Service
 {
@@ -36,6 +37,26 @@ namespace MiniBlog.Core.Service
         public TEntity UpdateEntity(TEntity entity)
         {
             return _Repository.UpdateEntity(entity).Entity;
+        }
+    }
+
+    //分页类
+    public static class Pager
+    {
+        public static async Task<(int total, List<TSource> rows)> ToPagerAsync<TSource>
+            (this IQueryable<TSource> source, int pageIndex, int pageRows)
+        {
+            if (pageIndex < 1)
+            {
+                pageIndex = 1;
+            }
+            if (pageRows < 1)
+            {
+                pageRows = 1;
+            }
+            var total = await source.CountAsync();
+            var rows = await source.Skip(pageRows * (pageIndex - 1)).Take(pageRows).ToListAsync();
+            return (total, rows);
         }
     }
 }
