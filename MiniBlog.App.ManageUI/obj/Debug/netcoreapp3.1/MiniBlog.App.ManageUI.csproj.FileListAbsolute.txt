@@ -148,3 +148,5 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\AutoMapper
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.Mapper.dll
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\bin\Debug\netcoreapp3.1\MiniBlog.Core.Mapper.pdb
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Pictures.cshtml.g.cs
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Categories.cshtml.g.cs
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Category.cshtml.g.cs

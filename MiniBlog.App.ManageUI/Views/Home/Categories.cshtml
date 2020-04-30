@@ -1,0 +1,39 @@
+﻿
+
+@model IEnumerable<MiniBlog.Core.ViewModels.ListView.ListCategoryViewModel>
+
+@{
+    ViewData["Title"] = "分类管理";
+}
+
+<h4>Categories</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.ActionLink("编辑", "Category", new {id=item.Id})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
