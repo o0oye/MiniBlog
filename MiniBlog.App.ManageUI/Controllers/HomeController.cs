@@ -37,5 +37,12 @@ namespace MiniBlog.App.ManageUI.Controllers
             ViewBag.Options = options;
             return View(result.rows);
         }
+
+        //删除
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _pictureService.DeletePictureAsync(id);
+            return RedirectToAction("Pictures");
+        }
     }
 }

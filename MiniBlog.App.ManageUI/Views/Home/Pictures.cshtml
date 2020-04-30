@@ -2,7 +2,7 @@
 @model IEnumerable<MiniBlog.Core.ViewModels.ListView.ListPictureViewModel>
 
 @{
-    ViewData["Title"] = "Pictures";
+    ViewData["Title"] = "图片管理";
 }
 <h1>Pictures</h1>
 <table class="table">
@@ -20,17 +20,21 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    <img src="@Html.DisplayFor(modelItem => item.Small)" style="height:60px;" />
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Big)
-                </td>
-                <td>
-                    @Html.ActionLink("删除", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
-            </tr>
+        <tr>
+            <td>
+                <img src="@item.Small" style="height:60px;" />
+                
+            </td>
+            <td>
+                <a href="#" class="btn btn-primary copy" value="ahaha">复制</a>
+            </td>
+            <td>
+                <a href="#" class="btn btn-primary copy" value="ahaha">复制</a>
+            </td>
+            <td>
+                @Html.ActionLink("删除", "Delete", new { id = item.Id })
+            </td>
+        </tr>
         }
     </tbody>
 </table>

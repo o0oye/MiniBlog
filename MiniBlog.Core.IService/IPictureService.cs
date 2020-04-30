@@ -8,5 +8,6 @@ namespace MiniBlog.Core.IService
     public interface IPictureService : IServiceBase<PictureEntity, long>
     {
         Task<(int total, List<ListPictureViewModel> rows)> GetPagerAsync(int pageIndex, int rows);
+        Task<int> DeletePictureAsync(long id);
     }
 }

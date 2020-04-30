@@ -28,15 +28,25 @@ namespace MiniBlog.Core.Service
         }
 
         //获取实体
-        public async ValueTask<TEntity> GetEntity(TPrimaryKey primaryKey)
+        protected async ValueTask<TEntity> GetEntity(TPrimaryKey primaryKey)
         {
             return await _Repository.GetEntity(primaryKey);
         }
 
         //更新实体
-        public TEntity UpdateEntity(TEntity entity)
+        protected TEntity UpdateEntity(TEntity entity)
         {
             return _Repository.UpdateEntity(entity).Entity;
+        }
+
+        //删除实体
+        protected async Task RemoveEntityAsync(TPrimaryKey primaryKey)
+        {
+            var entity = await GetEntity(primaryKey);
+            if (entity != null)
+            {
+                _Repository.RemoveEntity(entity);
+            }
         }
     }
 

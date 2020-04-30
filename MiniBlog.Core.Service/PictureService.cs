@@ -26,5 +26,12 @@ namespace MiniBlog.Core.Service
             var listPictures = _mapper.Map<List<ListPictureViewModel>>(result.rows);
             return (result.total, listPictures);
         }
+
+        //删除图片
+        public async Task<int> DeletePictureAsync(long id)
+        {
+            await RemoveEntityAsync(id);
+            return await _UnitOfWork.SaveChangesAsync();
+        }
     }
 }
