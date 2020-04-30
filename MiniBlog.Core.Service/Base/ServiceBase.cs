@@ -6,6 +6,7 @@ using MiniBlog.Data.Entity;
 using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace MiniBlog.Core.Service
 {
@@ -25,6 +26,12 @@ namespace MiniBlog.Core.Service
         {
             _UnitOfWork = unitOfWork;
             _Repository = repository;
+        }
+
+        //添加实体
+        protected async ValueTask<EntityEntry<TEntity>> AddEntity(TEntity entity)
+        {
+            return await _Repository.AddEntity(entity);
         }
 
         //获取实体

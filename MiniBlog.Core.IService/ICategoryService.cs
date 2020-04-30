@@ -6,7 +6,7 @@ using MiniBlog.Core.ViewModels.PostView;
 
 namespace MiniBlog.Core.IService
 {
-    public interface ICategoryService : IServiceBase<AdminEntity, int>
+    public interface ICategoryService : IServiceBase<CategoryEntity, int>
     {
         Task<List<ListCategoryViewModel>> GetAllCategories();
 

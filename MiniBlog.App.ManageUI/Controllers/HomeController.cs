@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MiniBlog.Core.IService;
 using MiniBlog.Core.Plugin;
 using MiniBlog.Core.ViewModels.PostView;
+using MiniBlog.Core.ViewModels.ListView;
 
 namespace MiniBlog.App.ManageUI.Controllers
 {
@@ -13,11 +14,14 @@ namespace MiniBlog.App.ManageUI.Controllers
     {
         private readonly IPictureService _pictureService;
         private readonly ICategoryService _categoryService;
+        private readonly IPostService _postService;
 
-        public HomeController(IPictureService pictureService, ICategoryService categoryService)
+        public HomeController(IPictureService pictureService,
+            ICategoryService categoryService, IPostService postService)
         {
             _pictureService = pictureService;
             _categoryService = categoryService;
+            _postService = postService;
         }
 
         //主页
@@ -33,7 +37,7 @@ namespace MiniBlog.App.ManageUI.Controllers
             var options = new PagerOption
             {
                 PageIndex = index,
-                PageSize = 3,
+                PageSize = 6,
             };
             var result = await _pictureService.GetPagerAsync(options.PageIndex, options.PageSize);
             options.Total = result.total;
@@ -67,12 +71,46 @@ namespace MiniBlog.App.ManageUI.Controllers
         //更新类别
         public async Task<IActionResult> Category(EditCategoryViewModel editCategoryViewModel)
         {
-            var reuslt=await _categoryService.UpdateCategory(editCategoryViewModel);
-            if(reuslt>0)
+            var reuslt = await _categoryService.UpdateCategory(editCategoryViewModel);
+            if (reuslt > 0)
             {
                 return RedirectToAction("Categories");
             }
             return View(editCategoryViewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Post(int Id)
+        {
+            var editPostViewModel = await _postService.GetPost(Id);
+            return View(editPostViewModel);
+        }
+
+        //发布博文
+        [HttpPost]
+        public async Task<IActionResult> Post(EditPostViewModel editPostViewModel)
+        {
+            var result = await _postService.AddPost(editPostViewModel);
+            if (result > 0)
+            {
+                return RedirectToAction("Posts");
+            }
+            return View(editPostViewModel);
+        }
+
+
+        //博文列表
+        public async Task<IActionResult> Posts([FromQuery]int index)
+        {
+            var options = new PagerOption
+            {
+                PageIndex = index,
+                PageSize = 1,
+            };
+            var result = await _postService.GetPagerAsync(options.PageIndex, options.PageSize);
+            options.Total = result.total;
+            ViewBag.Options = options;
+            return View(result.rows);
         }
     }
 }
