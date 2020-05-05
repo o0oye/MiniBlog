@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MiniBlog.Core.IService;
 using MiniBlog.Core.Plugin;
+using MiniBlog.Core.Plugin.IO;
 using MiniBlog.Core.ViewModels.PostView;
 
 namespace MiniBlog.App.ManageUI.Controllers
@@ -55,17 +56,21 @@ namespace MiniBlog.App.ManageUI.Controllers
                 var webRootPath = env.WebRootPath;
                 var guid = Guid.NewGuid().ToString();
                 string fileExt = Path.GetExtension(imgFile.FileName);
-                var filePath = Path.Combine(webRootPath,guid)+ fileExt;
-                var editPictureViewModel = new EditPictureViewModel
+                var filePath = Path.Combine(webRootPath, guid);
+                var picture = new EditPictureViewModel
                 {
-                    Origin = filePath,
-                    Big = "big" + filePath,
-                    Small = "small" + filePath
+                    //原图单独放到一个文件夹
+                    Origin = $"{filePath}_Origin{fileExt}",
+                    Big = $"{filePath}_Big{fileExt}",
+                    Small = $"{filePath}_Small{fileExt}"
                 };
-                using (var stream = new FileStream(editPictureViewModel.Origin, FileMode.Create))
+                using (var stream = new FileStream(picture.Origin, FileMode.Create))
                 {
                     await imgFile.CopyToAsync(stream);
                 }
+                FormatImage.AutoToSmall(picture.Origin, picture.Big, 1080);
+                FormatImage.AutoToSmall(picture.Origin, picture.Small, 260);
+
             }
             return View();
         }
@@ -146,7 +151,7 @@ namespace MiniBlog.App.ManageUI.Controllers
             var options = new PagerOption
             {
                 PageIndex = index,
-                PageSize = 1,
+                PageSize = 6,
             };
             var result = await _postService.GetPagerAsync(options.PageIndex, options.PageSize);
             options.Total = result.total;

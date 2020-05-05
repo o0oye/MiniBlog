@@ -13,13 +13,14 @@ namespace MiniBlog.Core.Plugin.IO
         /// <param name="outPath">如果和原图地址相同则覆盖原图</param>
         /// <param name="toWidth">生成图片宽</param>
         /// <param name="quality">压缩质量(1~100)数字越小压缩比率越大(</param>
-        public static void AutoToSmall(string inPath, string outPath, int toWidth, int quality=80)
+        public static void AutoToSmall(string inPath, string outPath, int toWidth, int quality=100)
         {
             //原始图片
-            var initImage = Image.FromFile(inPath);
+            var initImage = Image.FromFile(inPath);            
             var rawFormat = initImage.RawFormat;
             var initWidth = initImage.Width;
             var initHeight = initImage.Height;
+
             //图片太小不用处理了,直接保存
             if (toWidth >= initWidth)
             {
@@ -57,7 +58,7 @@ namespace MiniBlog.Core.Plugin.IO
             EncoderParameters ep = new EncoderParameters();
             long[] qualitys = new long[1];
             qualitys[0] = quality;//设置压缩的比例1-100    
-            EncoderParameter encoderParameter = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, qualitys);
+            EncoderParameter encoderParameter = new EncoderParameter(Encoder.Quality, qualitys);
             ep.Param[0] = encoderParameter;
             try
             {
