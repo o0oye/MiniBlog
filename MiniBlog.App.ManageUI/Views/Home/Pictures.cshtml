@@ -15,7 +15,7 @@
                 @Html.DisplayNameFor(model => model.Big)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Origin)
+                @Html.DisplayNameFor(model => model.CreateTime)
             </th>
             <th>
                 <a asp-controller="Home" asp-action="Picture">上传图片</a>
@@ -27,14 +27,17 @@
         {
         <tr>
             <td>
-                <img src="@item.Small" style="height:60px;" />
-                
+                @{
+                    var index= item.Small.LastIndexOf("\\");
+                    var img = item.Small.Substring(index);
+                }
+                <img src="@img" style="height:50px;" />
             </td>
             <td>
                 <a href="#" class="btn btn-primary copy" value="ahaha">复制</a>
             </td>
             <td>
-                <a href="#" class="btn btn-primary copy" value="ahaha">复制</a>
+                @item.CreateTime
             </td>
             <td>
                 @Html.ActionLink("删除", "DeletePicture", new { id = item.Id })

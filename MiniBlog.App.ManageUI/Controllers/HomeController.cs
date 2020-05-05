@@ -49,7 +49,7 @@ namespace MiniBlog.App.ManageUI.Controllers
         }
 
         //上传图片
-        public IActionResult Picture([FromServices]IWebHostEnvironment env, [FromForm]IFormFile imgFile)
+        public async Task<IActionResult> Picture([FromServices]IWebHostEnvironment env, [FromForm]IFormFile imgFile)
         {
             if (imgFile != null && imgFile.Length > 0 && imgFile.Length < 20971520)
             {
@@ -66,6 +66,7 @@ namespace MiniBlog.App.ManageUI.Controllers
                     FormatImage.AutoToSmall(stream, picture.Big, 1080);
                     FormatImage.AutoToSmall(stream, picture.Small, 260);
                 }
+                await _pictureService.AddPicture(picture);
             }
             return View();
         }
@@ -73,7 +74,7 @@ namespace MiniBlog.App.ManageUI.Controllers
         //删除
         public async Task<IActionResult> DeletePicture(int id)
         {
-            await _pictureService.DeletePictureAsync(id);
+            await _pictureService.DeletePicture(id);
             return RedirectToAction("Pictures");
         }
 

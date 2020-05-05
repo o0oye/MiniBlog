@@ -34,6 +34,8 @@ namespace MiniBlog.Core.Service
         public async Task<int> AddPost(EditPostViewModel editPostViewModel)
         {
             var postEntity = _mapper.Map<PostEntity>(editPostViewModel);
+            postEntity.CreateTime = DateTime.Now;
+            postEntity.UpdateTime = postEntity.CreateTime;
             await AddEntity(postEntity);
             return await _UnitOfWork.SaveChangesAsync();
         }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 
 namespace MiniBlog.Core.ViewModels.ListView
 {
@@ -15,5 +16,8 @@ namespace MiniBlog.Core.ViewModels.ListView
 
         [DisplayName("小图")]
         public string Small { get; set; }
+
+        [DisplayName("上传时间")]
+        public DateTime CreateTime { get; set; }
     }
 }
