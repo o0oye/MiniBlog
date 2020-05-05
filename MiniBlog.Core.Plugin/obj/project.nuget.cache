@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K0sKIoSOlL2GHE/hBIRIYR+nr+oIkNi5vCZDQCaqdx42dzR1ne5w7H/G0InLwgXmoQST2iNY66FRNg7klqQT+Q==",
+  "dgSpecHash": "2OBF15nzkmU+PJ0ImniKLyk4q3/r+TWiOixPnW1tCk0REsW5DWcDXNBITmrKFWQz2JiKkMPvcZHblN9Q1lRjJQ==",
   "success": true,
   "projectFilePath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",

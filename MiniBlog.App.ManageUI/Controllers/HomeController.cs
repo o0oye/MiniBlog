@@ -1,6 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MiniBlog.Core.IService;
 using MiniBlog.Core.Plugin;
@@ -44,12 +47,36 @@ namespace MiniBlog.App.ManageUI.Controllers
             return View(result.rows);
         }
 
+        //上传图片
+        public async Task<IActionResult> Picture([FromServices]IWebHostEnvironment env, [FromForm]IFormFile imgFile)
+        {
+            if (imgFile != null && imgFile.Length > 0 && imgFile.Length < 20971520)
+            {
+                var webRootPath = env.WebRootPath;
+                var guid = Guid.NewGuid().ToString();
+                string fileExt = Path.GetExtension(imgFile.FileName);
+                var filePath = Path.Combine(webRootPath,guid)+ fileExt;
+                var editPictureViewModel = new EditPictureViewModel
+                {
+                    Origin = filePath,
+                    Big = "big" + filePath,
+                    Small = "small" + filePath
+                };
+                using (var stream = new FileStream(editPictureViewModel.Origin, FileMode.Create))
+                {
+                    await imgFile.CopyToAsync(stream);
+                }
+            }
+            return View();
+        }
+
         //删除
         public async Task<IActionResult> DeletePicture(int id)
         {
             await _pictureService.DeletePictureAsync(id);
             return RedirectToAction("Pictures");
         }
+
 
         //分类
         [HttpGet]
