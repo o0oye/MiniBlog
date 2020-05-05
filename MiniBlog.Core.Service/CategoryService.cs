@@ -7,6 +7,7 @@ using MiniBlog.Data.IData;
 using MiniBlog.Core.ViewModels.ListView;
 using MiniBlog.Core.ViewModels.PostView;
 using AutoMapper;
+using System;
 
 namespace MiniBlog.Core.Service
 {
@@ -22,7 +23,7 @@ namespace MiniBlog.Core.Service
         //获取全部分类
         public async Task<List<ListCategoryViewModel>> GetAllCategories()
         {
-            var listCategory = await _Queryable.ToListAsync();
+            var listCategory = await _Queryable.AsNoTracking().ToListAsync();
             return _mapper.Map<List<ListCategoryViewModel>>(listCategory);
         }
 
@@ -37,7 +38,9 @@ namespace MiniBlog.Core.Service
         public async Task<int> UpdateCategory(EditCategoryViewModel editCategoryViewModel)
         {
             var categoryEntity = _mapper.Map<CategoryEntity>(editCategoryViewModel);
-            UpdateEntity(categoryEntity);
+            categoryEntity.UpdateTime = DateTime.Now;
+            var entity = UpdateEntity(categoryEntity);
+            entity.Property("CreateTime").IsModified = false;
             return await _UnitOfWork.SaveChangesAsync();
         }
     }

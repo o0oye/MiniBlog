@@ -7,6 +7,8 @@ using MiniBlog.Data.IData;
 using MiniBlog.Core.ViewModels.PostView;
 using MiniBlog.Core.ViewModels.ListView;
 using AutoMapper;
+using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace MiniBlog.Core.Service
 {
@@ -40,7 +42,9 @@ namespace MiniBlog.Core.Service
         public async Task<int> UpdatePost(EditPostViewModel editPostViewModel)
         {
             var postEntity = _mapper.Map<PostEntity>(editPostViewModel);
-            UpdateEntity(postEntity);
+            postEntity.UpdateTime = DateTime.Now;
+            var entity=UpdateEntity(postEntity);
+            entity.Property("CreateTime").IsModified = false;
             return await _UnitOfWork.SaveChangesAsync();
         }
 
@@ -56,6 +60,7 @@ namespace MiniBlog.Core.Service
         {
             var categoryQueryable = _categoryService._Queryable;
             var result = await _Queryable
+                .AsNoTracking()
                 .Join(categoryQueryable, p => p.CategoryId, c => c.Id, (p, c) => new ListPostViewModel
                 {
                     Id = p.Id,

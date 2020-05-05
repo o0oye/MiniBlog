@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using MiniBlog.Data.Entity;
 using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
+
 
 namespace MiniBlog.Core.Service
 {
@@ -41,9 +42,9 @@ namespace MiniBlog.Core.Service
         }
 
         //更新实体
-        protected TEntity UpdateEntity(TEntity entity)
+        protected EntityEntry<TEntity> UpdateEntity(TEntity entity)
         {
-            return _Repository.UpdateEntity(entity).Entity;
+            return _Repository.UpdateEntity(entity);
         }
 
         //删除实体

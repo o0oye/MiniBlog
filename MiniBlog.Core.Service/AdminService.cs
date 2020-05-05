@@ -6,6 +6,7 @@ using MiniBlog.Core.IService;
 using MiniBlog.Data.IData;
 using MiniBlog.Core.ViewModels.PostView;
 using AutoMapper;
+using System;
 
 namespace MiniBlog.Core.Service
 {
@@ -43,7 +44,9 @@ namespace MiniBlog.Core.Service
         public async Task<int> UpdateAdmin(EditAdminViewModel editAdminViewModel)
         {
             var adminEntity = _mapper.Map<AdminEntity>(editAdminViewModel);
-            UpdateEntity(adminEntity);
+            adminEntity.UpdateTime = DateTime.Now;
+            var entity=UpdateEntity(adminEntity);
+            entity.Property("CreateTime").IsModified = false;
             return await _UnitOfWork.SaveChangesAsync();
         }
     }

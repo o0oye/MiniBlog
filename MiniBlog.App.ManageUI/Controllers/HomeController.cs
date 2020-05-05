@@ -97,17 +97,18 @@ namespace MiniBlog.App.ManageUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(EditPostViewModel editPostViewModel)
         {
+            var result = 0;
             if (editPostViewModel.Id > 0)
             {
-                var result = _postService.UpdatePost(editPostViewModel);
+                result = await _postService.UpdatePost(editPostViewModel);
             }
             else
             {
-                var result = await _postService.AddPost(editPostViewModel);
-                if (result > 0)
-                {
-                    return RedirectToAction("Posts");
-                }
+                result = await _postService.AddPost(editPostViewModel);
+            }
+            if (result > 0)
+            {
+                return RedirectToAction("Posts");
             }
             return View(editPostViewModel);
         }
