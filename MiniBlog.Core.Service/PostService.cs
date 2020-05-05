@@ -33,7 +33,22 @@ namespace MiniBlog.Core.Service
         {
             var postEntity = _mapper.Map<PostEntity>(editPostViewModel);
             await AddEntity(postEntity);
-            return _UnitOfWork.SaveChanges();
+            return await _UnitOfWork.SaveChangesAsync();
+        }
+
+        //编辑博文
+        public async Task<int> UpdatePost(EditPostViewModel editPostViewModel)
+        {
+            var postEntity = _mapper.Map<PostEntity>(editPostViewModel);
+            UpdateEntity(postEntity);
+            return await _UnitOfWork.SaveChangesAsync();
+        }
+
+        //删除博文
+        public async Task<int> DeletePost(long id)
+        {
+            await RemoveEntityAsync(id);
+            return await _UnitOfWork.SaveChangesAsync();
         }
 
         //分页列表

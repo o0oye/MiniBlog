@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 using MiniBlog.Core.IService;
 using MiniBlog.Core.Plugin;
 using MiniBlog.Core.ViewModels.PostView;
-using MiniBlog.Core.ViewModels.ListView;
 
 namespace MiniBlog.App.ManageUI.Controllers
 {
@@ -46,7 +45,7 @@ namespace MiniBlog.App.ManageUI.Controllers
         }
 
         //删除
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeletePicture(int id)
         {
             await _pictureService.DeletePictureAsync(id);
             return RedirectToAction("Pictures");
@@ -79,6 +78,7 @@ namespace MiniBlog.App.ManageUI.Controllers
             return View(editCategoryViewModel);
         }
 
+        //发布博文
         [HttpGet]
         public async Task<IActionResult> Post(int Id)
         {
@@ -86,18 +86,31 @@ namespace MiniBlog.App.ManageUI.Controllers
             return View(editPostViewModel);
         }
 
+        //删除博文
+        public async Task<IActionResult> DeletePost(int Id)
+        {
+            await _postService.DeletePost(Id);
+            return RedirectToAction("Posts");
+        }
+
         //发布博文
         [HttpPost]
         public async Task<IActionResult> Post(EditPostViewModel editPostViewModel)
         {
-            var result = await _postService.AddPost(editPostViewModel);
-            if (result > 0)
+            if (editPostViewModel.Id > 0)
             {
-                return RedirectToAction("Posts");
+                var result = _postService.UpdatePost(editPostViewModel);
+            }
+            else
+            {
+                var result = await _postService.AddPost(editPostViewModel);
+                if (result > 0)
+                {
+                    return RedirectToAction("Posts");
+                }
             }
             return View(editPostViewModel);
         }
-
 
         //博文列表
         public async Task<IActionResult> Posts([FromQuery]int index)

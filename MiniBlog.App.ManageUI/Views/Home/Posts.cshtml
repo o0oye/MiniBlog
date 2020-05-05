@@ -33,8 +33,8 @@
                 @Html.DisplayFor(modelItem => item.CreateTime)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("编辑", "Post", new { id=item.Id}) |
+                @Html.ActionLink("删除", "DeletePost", new { id=item.Id})
             </td>
         </tr>
 }
