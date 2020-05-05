@@ -49,28 +49,23 @@ namespace MiniBlog.App.ManageUI.Controllers
         }
 
         //上传图片
-        public async Task<IActionResult> Picture([FromServices]IWebHostEnvironment env, [FromForm]IFormFile imgFile)
+        public IActionResult Picture([FromServices]IWebHostEnvironment env, [FromForm]IFormFile imgFile)
         {
             if (imgFile != null && imgFile.Length > 0 && imgFile.Length < 20971520)
             {
-                var webRootPath = env.WebRootPath;
-                var guid = Guid.NewGuid().ToString();
-                string fileExt = Path.GetExtension(imgFile.FileName);
-                var filePath = Path.Combine(webRootPath, guid);
+                var fileExt = Path.GetExtension(imgFile.FileName);
+                var filePath = Path.Combine(env.WebRootPath, Guid.NewGuid().ToString());
                 var picture = new EditPictureViewModel
                 {
-                    //原图单独放到一个文件夹
                     Origin = $"{filePath}_Origin{fileExt}",
                     Big = $"{filePath}_Big{fileExt}",
                     Small = $"{filePath}_Small{fileExt}"
                 };
-                using (var stream = new FileStream(picture.Origin, FileMode.Create))
+                using (var stream = imgFile.OpenReadStream())
                 {
-                    await imgFile.CopyToAsync(stream);
+                    FormatImage.AutoToSmall(stream, picture.Big, 1080);
+                    FormatImage.AutoToSmall(stream, picture.Small, 260);
                 }
-                FormatImage.AutoToSmall(picture.Origin, picture.Big, 1080);
-                FormatImage.AutoToSmall(picture.Origin, picture.Small, 260);
-
             }
             return View();
         }
