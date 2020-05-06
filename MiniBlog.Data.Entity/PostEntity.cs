@@ -6,6 +6,7 @@
         public string Content { get; set; }
         public string Summary { get; set; }
         public string Icon { get; set; }
+        public bool IsShow { get; set; }
         public int CategoryId { get; set; }
         public CategoryEntity Category { get; set; }
     }

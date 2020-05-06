@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MiniBlog.Core.IService;
 using MiniBlog.Core.Plugin;
 using MiniBlog.Core.Plugin.IO;
@@ -26,7 +29,10 @@ namespace MiniBlog.App.ManageUI.Controllers
             _categoryService = categoryService;
             _postService = postService;
         }
+        public void test()
+        { 
 
+        }
         //主页
         public IActionResult Index()
         {
@@ -40,7 +46,7 @@ namespace MiniBlog.App.ManageUI.Controllers
             var options = new PagerOption
             {
                 PageIndex = index,
-                PageSize = 6,
+                PageSize = 4,
             };
             var result = await _pictureService.GetPagerAsync(options.PageIndex, options.PageSize);
             options.Total = result.total;
@@ -110,7 +116,29 @@ namespace MiniBlog.App.ManageUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Post(int Id)
         {
+            var categories = await _categoryService.GetAllCategories();
+            ViewBag.Categories = categories.Select(m => new SelectListItem
+            {
+                Value = m.Id.ToString(),
+                Text = m.Category
+            });
             var editPostViewModel = await _postService.GetPost(Id);
+            return View(editPostViewModel);
+        }
+
+        //编辑博文内容
+        [HttpGet]
+        public async Task<IActionResult> Content(int Id)
+        {
+            var editPostViewModel = await _postService.GetPost(Id);
+            return View(editPostViewModel);
+        }
+
+        //编辑博文内容
+        [HttpPost]
+        public async Task<IActionResult> Content(EditPostViewModel editPostViewModel)
+        {
+            var result = await _postService.UpdateContent(editPostViewModel);
             return View(editPostViewModel);
         }
 

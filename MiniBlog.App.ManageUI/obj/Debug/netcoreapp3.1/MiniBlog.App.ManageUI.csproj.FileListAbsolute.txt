@@ -153,3 +153,5 @@ D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\View
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Post.cshtml.g.cs
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Posts.cshtml.g.cs
 D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Picture.cshtml.g.cs
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Content.cshtml.g.cs
+D:\working2020\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\test.cshtml.g.cs

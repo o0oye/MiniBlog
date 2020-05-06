@@ -17,7 +17,7 @@ namespace MiniBlog.Data.Migrations
                 .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("MiniBlog.Data.Dto.AdminDto", b =>
+            modelBuilder.Entity("MiniBlog.Data.Entity.AdminEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,14 +47,14 @@ namespace MiniBlog.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 672, DateTimeKind.Local).AddTicks(3245),
+                            CreateTime = new DateTime(2020, 5, 6, 18, 50, 8, 16, DateTimeKind.Local).AddTicks(8750),
                             Password = "123456",
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 673, DateTimeKind.Local).AddTicks(7534),
+                            UpdateTime = new DateTime(2020, 5, 6, 18, 50, 8, 18, DateTimeKind.Local).AddTicks(6987),
                             User = "admin"
                         });
                 });
 
-            modelBuilder.Entity("MiniBlog.Data.Dto.CategoryDto", b =>
+            modelBuilder.Entity("MiniBlog.Data.Entity.CategoryEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -80,47 +80,47 @@ namespace MiniBlog.Data.Migrations
                         {
                             Id = 1,
                             Category = "Category1",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8368),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8396)
+                            CreateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9210),
+                            UpdateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9236)
                         },
                         new
                         {
                             Id = 2,
                             Category = "Category2",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8464),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8466)
+                            CreateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9300),
+                            UpdateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9302)
                         },
                         new
                         {
                             Id = 3,
                             Category = "Category3",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8469),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8470)
+                            CreateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9305),
+                            UpdateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9306)
                         },
                         new
                         {
                             Id = 4,
                             Category = "Category4",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8473),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8474)
+                            CreateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9309),
+                            UpdateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9310)
                         },
                         new
                         {
                             Id = 5,
                             Category = "Category5",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8476),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8477)
+                            CreateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9312),
+                            UpdateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9313)
                         },
                         new
                         {
                             Id = 6,
                             Category = "Category6",
-                            CreateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8484),
-                            UpdateTime = new DateTime(2020, 4, 26, 2, 59, 39, 687, DateTimeKind.Local).AddTicks(8486)
+                            CreateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9321),
+                            UpdateTime = new DateTime(2020, 5, 6, 18, 50, 8, 30, DateTimeKind.Local).AddTicks(9323)
                         });
                 });
 
-            modelBuilder.Entity("MiniBlog.Data.Dto.PictureDto", b =>
+            modelBuilder.Entity("MiniBlog.Data.Entity.PictureEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -149,7 +149,7 @@ namespace MiniBlog.Data.Migrations
                     b.ToTable("Picture");
                 });
 
-            modelBuilder.Entity("MiniBlog.Data.Dto.PostDto", b =>
+            modelBuilder.Entity("MiniBlog.Data.Entity.PostEntity", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -159,7 +159,6 @@ namespace MiniBlog.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Content")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreateTime")
@@ -168,6 +167,9 @@ namespace MiniBlog.Data.Migrations
                     b.Property<string>("Icon")
                         .HasColumnType("varchar(256) CHARACTER SET utf8mb4")
                         .HasMaxLength(256);
+
+                    b.Property<bool>("IsShow")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("Summary")
                         .HasColumnType("varchar(256) CHARACTER SET utf8mb4")
@@ -188,9 +190,9 @@ namespace MiniBlog.Data.Migrations
                     b.ToTable("Post");
                 });
 
-            modelBuilder.Entity("MiniBlog.Data.Dto.PostDto", b =>
+            modelBuilder.Entity("MiniBlog.Data.Entity.PostEntity", b =>
                 {
-                    b.HasOne("MiniBlog.Data.Dto.CategoryDto", "Category")
+                    b.HasOne("MiniBlog.Data.Entity.CategoryEntity", "Category")
                         .WithMany("Posts")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -12,6 +12,8 @@ namespace MiniBlog.Core.IService
         Task<int> AddPost(EditPostViewModel editPostViewModel);
         Task<int> DeletePost(long id);
         Task<int> UpdatePost(EditPostViewModel editPostViewModel);
+
+        Task<int> UpdateContent(EditPostViewModel editPostViewModel);
         Task<(int total, List<ListPostViewModel> rows)> GetPagerAsync(int pageIndex, int rows);
 
     }

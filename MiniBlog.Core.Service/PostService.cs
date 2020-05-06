@@ -45,8 +45,22 @@ namespace MiniBlog.Core.Service
         {
             var postEntity = _mapper.Map<PostEntity>(editPostViewModel);
             postEntity.UpdateTime = DateTime.Now;
-            var entity=UpdateEntity(postEntity);
+            var entity = UpdateEntity(postEntity);
             entity.Property("CreateTime").IsModified = false;
+            return await _UnitOfWork.SaveChangesAsync();
+        }
+
+        //更新内容
+        public async Task<int> UpdateContent(EditPostViewModel editPostViewModel)
+        {
+            var postEntity = _mapper.Map<PostEntity>(editPostViewModel);
+            postEntity.UpdateTime = DateTime.Now;
+            var entity = UpdateEntity(postEntity);
+            entity.Property(m => m.Title).IsModified = false;
+            entity.Property(m => m.Icon).IsModified = false;
+            entity.Property(m => m.CreateTime).IsModified = false;
+            entity.Property(m => m.CategoryId).IsModified = false;
+            entity.Property(m => m.IsShow).IsModified = false;
             return await _UnitOfWork.SaveChangesAsync();
         }
 
@@ -70,6 +84,7 @@ namespace MiniBlog.Core.Service
                     CreateTime = p.CreateTime,
                     Category = c.Category
                 })
+                .OrderByDescending(m => m.CreateTime)
                 .ToPagerAsync(pageIndex, rows);
             return (result.total, result.rows);
         }

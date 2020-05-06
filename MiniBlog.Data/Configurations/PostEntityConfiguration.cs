@@ -16,10 +16,11 @@ namespace MiniBlog.Data.Configurations
             builder.Property(e => e.Summary)
                 .HasMaxLength(256);
             builder.Property(e => e.Content)
-                .IsRequired()
                 .HasColumnType("text");
             builder.Property(m => m.Icon)
                  .HasMaxLength(256);
+            builder.Property(m => m.IsShow)
+                .IsRequired();
         }
     }
 }

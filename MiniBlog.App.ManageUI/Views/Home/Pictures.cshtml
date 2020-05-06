@@ -29,12 +29,15 @@
             <td>
                 @{
                     var index= item.Small.LastIndexOf("\\");
-                    var img = item.Small.Substring(index);
+                    var img = item.Small.Substring(index+1);
+
+                    var bigIndex = item.Big.LastIndexOf("\\");
+                    var bigImg = item.Big.Substring(bigIndex+1);
                 }
-                <img src="@img" style="height:50px;" />
+                <img src="/@img" style="height:50px;" />
             </td>
             <td>
-                <a href="#" class="btn btn-primary copy" value="ahaha">复制</a>
+                <input value="/@bigImg" />
             </td>
             <td>
                 @item.CreateTime

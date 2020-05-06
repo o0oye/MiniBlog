@@ -25,5 +25,8 @@ namespace MiniBlog.Core.ViewModels.PostView
         [DisplayName("分类")]
         [Required(ErrorMessage = "漏掉{0}了喔")]
         public int CategoryId { get; set; }
+
+        [DisplayName("是否显示")]
+        public bool IsShow { get; set; }
     }
 }
