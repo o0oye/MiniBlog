@@ -14,5 +14,8 @@ namespace MiniBlog.Core.ViewModels.ListView
         
         [DisplayName("发布时间")]
         public DateTime CreateTime { get; set; }
+
+        [DisplayName("缩略图")]
+        public string Icon { get; set; }
     }
 }

@@ -82,7 +82,8 @@ namespace MiniBlog.Core.Service
                     Id = p.Id,
                     Title = p.Title,
                     CreateTime = p.CreateTime,
-                    Category = c.Category
+                    Icon = p.Icon,
+                    Category = c.Category,
                 })
                 .OrderByDescending(m => m.CreateTime)
                 .ToPagerAsync(pageIndex, rows);

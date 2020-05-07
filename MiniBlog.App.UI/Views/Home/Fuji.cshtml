@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MiniBlog.Core.ViewModels.ListView.ListPostViewModel>
+
+@{
+    ViewData["Title"] = "Fujifilm";
+}
+
+<h1 class="text-muted">Fujifilm</h1>
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                <a class="text-muted" asp-controller="Home" asp-action="Fuji">
+                    <h5>@item.Title</h5>
+                </a>
+                <a asp-controller="Home" asp-action="Fuji">
+                    <img src="@item.Icon" style="width:100%;" />                    
+                </a>
+            </p>
+        </div>
+    </div>
+}
+
+<pager action-url="/Home/Fuji" option="ViewBag.Options"></pager>
