@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj": {}
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj": {}
   },
   "projects": {
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj",
         "projectName": "MiniBlog.Core.IService",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +27,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj"
               },
-              "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj"
               }
             }
           }
@@ -62,21 +62,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj",
         "projectName": "MiniBlog.Core.Mapper",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,11 +89,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj"
               },
-              "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj"
               }
             }
           }
@@ -132,21 +132,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj",
         "projectName": "MiniBlog.Core.Plugin",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Plugin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -159,17 +159,17 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj"
               },
-              "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj"
               },
-              "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj"
               },
-              "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj"
               }
             }
           }
@@ -208,21 +208,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj",
         "projectName": "MiniBlog.Core.Service",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Service\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Service\\MiniBlog.Core.Service.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,11 +235,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj"
               },
-              "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Mapper\\MiniBlog.Core.Mapper.csproj"
               }
             }
           }
@@ -270,21 +270,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
         "projectName": "MiniBlog.Core.ViewModels",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -329,21 +329,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj",
         "projectName": "MiniBlog.Data.Entity",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -384,21 +384,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj",
         "projectName": "MiniBlog.Data.IData",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -411,8 +411,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.Entity\\MiniBlog.Data.Entity.csproj"
               }
             }
           }
@@ -451,21 +451,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj",
         "projectName": "MiniBlog.Data",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data\\MiniBlog.Data.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -478,8 +478,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
-                "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj"
+              "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj": {
+                "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Data.IData\\MiniBlog.Data.IData.csproj"
               }
             }
           }
@@ -514,7 +514,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

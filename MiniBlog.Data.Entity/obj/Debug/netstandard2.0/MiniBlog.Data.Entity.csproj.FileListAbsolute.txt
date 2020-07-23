@@ -16,3 +16,11 @@ D:\working2020\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.D
 D:\working2020\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.dll
 D:\working2020\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb
 D:\working2020\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.csprojAssemblyReference.cache
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.deps.json
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.dll
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\bin\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.AssemblyInfoInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.AssemblyInfo.cs
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.csproj.CoreCompileInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.dll
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb

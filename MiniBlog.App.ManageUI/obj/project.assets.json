@@ -7224,19 +7224,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\junka\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.App.ManageUI\\MiniBlog.App.ManageUI.csproj",
+      "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.App.ManageUI\\MiniBlog.App.ManageUI.csproj",
       "projectName": "MiniBlog.App.ManageUI",
-      "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.App.ManageUI\\MiniBlog.App.ManageUI.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.App.ManageUI\\obj\\",
+      "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.App.ManageUI\\MiniBlog.App.ManageUI.csproj",
+      "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+      "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.App.ManageUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7249,11 +7249,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
-              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj"
+            "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj": {
+              "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.IService\\MiniBlog.Core.IService.csproj"
             },
-            "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj": {
-              "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj"
+            "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj": {
+              "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.Plugin\\MiniBlog.Core.Plugin.csproj"
             }
           }
         }
@@ -7300,7 +7300,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

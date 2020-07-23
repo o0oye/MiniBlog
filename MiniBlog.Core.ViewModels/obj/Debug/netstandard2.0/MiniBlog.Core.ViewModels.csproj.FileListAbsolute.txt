@@ -7,3 +7,11 @@ D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBl
 D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
 D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.csproj.CoreCompileInputs.cache
 D:\working2020\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.csprojAssemblyReference.cache
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.deps.json
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.dll
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\bin\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.AssemblyInfoInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.AssemblyInfo.cs
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.csproj.CoreCompileInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.dll
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb

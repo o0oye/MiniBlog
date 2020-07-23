@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {}
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {}
   },
   "projects": {
-    "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
+    "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
+        "projectUniqueName": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
         "projectName": "MiniBlog.Core.ViewModels",
-        "projectPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\working2020\\MiniBlog\\MiniBlog.Core.ViewModels\\obj\\",
+        "projectPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\MiniBlog.Core.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\junka\\.nuget\\packages\\",
+        "outputPath": "D:\\MyWork\\MiniBlog\\MiniBlog.Core.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,7 +59,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
