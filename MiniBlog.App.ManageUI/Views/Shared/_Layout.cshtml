@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Account" asp-action="Logout">OUT</a>
+                <a class="navbar-brand" asp-area="" asp-controller="account" asp-action="logout">退出</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,19 +21,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Post">发布</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="home" asp-action="posts">博文</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Posts">博文</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="home" asp-action="pictures">图片</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Pictures">图片</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="home" asp-action="categories">分类</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Categories">分类</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Admin">用户</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="account" asp-action="admin">用户</a>
                         </li>
                     </ul>
                 </div>

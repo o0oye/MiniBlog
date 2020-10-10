@@ -1,0 +1,14 @@
+D:\MyWork\MiniBlog\MiniBlog.Data\bin\Release\netstandard2.0\MiniBlog.Data.deps.json
+D:\MyWork\MiniBlog\MiniBlog.Data\bin\Release\netstandard2.0\MiniBlog.Data.dll
+D:\MyWork\MiniBlog\MiniBlog.Data\bin\Release\netstandard2.0\MiniBlog.Data.pdb
+D:\MyWork\MiniBlog\MiniBlog.Data\bin\Release\netstandard2.0\MiniBlog.Data.Entity.dll
+D:\MyWork\MiniBlog\MiniBlog.Data\bin\Release\netstandard2.0\MiniBlog.Data.IData.dll
+D:\MyWork\MiniBlog\MiniBlog.Data\bin\Release\netstandard2.0\MiniBlog.Data.IData.pdb
+D:\MyWork\MiniBlog\MiniBlog.Data\bin\Release\netstandard2.0\MiniBlog.Data.Entity.pdb
+D:\MyWork\MiniBlog\MiniBlog.Data\obj\Release\netstandard2.0\MiniBlog.Data.csprojAssemblyReference.cache
+D:\MyWork\MiniBlog\MiniBlog.Data\obj\Release\netstandard2.0\MiniBlog.Data.AssemblyInfoInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Data\obj\Release\netstandard2.0\MiniBlog.Data.AssemblyInfo.cs
+D:\MyWork\MiniBlog\MiniBlog.Data\obj\Release\netstandard2.0\MiniBlog.Data.csproj.CoreCompileInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Data\obj\Release\netstandard2.0\MiniBlog.Data.csproj.CopyComplete
+D:\MyWork\MiniBlog\MiniBlog.Data\obj\Release\netstandard2.0\MiniBlog.Data.dll
+D:\MyWork\MiniBlog\MiniBlog.Data\obj\Release\netstandard2.0\MiniBlog.Data.pdb

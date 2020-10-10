@@ -1,11 +1,11 @@
 ﻿@model MiniBlog.Core.ViewModels.PostView.EditPostViewModel
 
 @{
-    ViewData["Title"] = "发博文";
+    ViewData["Title"] = "发布博文";
     var category= ViewBag.Categories as IEnumerable<SelectListItem>;
 }
 
-<h4>Post</h4>
+<h4>发布博文</h4>
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Post">

@@ -45,7 +45,7 @@ namespace MiniBlog.App.ManageUI.Controllers
             var options = new PagerOption
             {
                 PageIndex = index,
-                PageSize = 4,
+                PageSize = 6,
             };
             var result = await _pictureService.GetPagerAsync(options.PageIndex, options.PageSize);
             options.Total = result.total;
@@ -54,22 +54,36 @@ namespace MiniBlog.App.ManageUI.Controllers
         }
 
         //上传图片
-        public async Task<IActionResult> Picture([FromServices]IWebHostEnvironment env, [FromForm]IFormFile imgFile)
+        public async Task<IActionResult> Picture([FromServices] IWebHostEnvironment env, [FromForm] IFormFile imgFile)
         {
-            if (imgFile != null && imgFile.Length > 0 && imgFile.Length < 20971520)
+            //图片最大<18M
+            if (imgFile != null && imgFile.Length > 0 && imgFile.Length < 18874368)
             {
+                //图片扩展名
                 var fileExt = Path.GetExtension(imgFile.FileName);
-                var filePath = Path.Combine(env.WebRootPath, Guid.NewGuid().ToString());
+                var rootPath = env.WebRootPath;
+                //按年月归档图片
+                var now = DateTime.Now;
+                var timePath = Path.Combine(now.Year.ToString(), now.Month.ToString());
+                var filePath = Path.Combine("photo", timePath);
+                //创建图片目录
+                if (!Directory.Exists(Path.Combine(rootPath, filePath)))
+                {
+                    Directory.CreateDirectory(Path.Combine(rootPath, filePath));
+                }
+                filePath = Path.Combine(filePath, Guid.NewGuid().ToString());
                 var picture = new EditPictureViewModel
                 {
-                    Origin = $"{filePath}_Origin{fileExt}",
-                    Big = $"{filePath}_Big{fileExt}",
-                    Small = $"{filePath}_Small{fileExt}"
+                    //原图可能太大，暂时不保存
+                    Origin = $"{filePath}_origin{fileExt}",
+                    Big = $"{filePath}_big{fileExt}",
+                    Small = $"{filePath}_small{fileExt}"
                 };
                 using (var stream = imgFile.OpenReadStream())
                 {
-                    FormatImage.AutoToSmall(stream, picture.Big, 1080);
-                    FormatImage.AutoToSmall(stream, picture.Small, 260);
+                    //为了不影响图片观感，建议图片质量值设置为80以上
+                    await FormatImage.AutoToSmall(stream, Path.Combine(rootPath, picture.Big), 1920,99);
+                    await FormatImage.AutoToSmall(stream, Path.Combine(rootPath, picture.Small), 1080,99);
                 }
                 await _pictureService.AddPicture(picture);
             }
@@ -77,9 +91,10 @@ namespace MiniBlog.App.ManageUI.Controllers
         }
 
         //删除
-        public async Task<IActionResult> DeletePicture(int id)
+        public async Task<IActionResult> DeletePicture([FromServices] IWebHostEnvironment env, int id)
         {
-            await _pictureService.DeletePicture(id);
+            var rootPath =env.WebRootPath;
+            await _pictureService.DeletePicture(id, rootPath);
             return RedirectToAction("Pictures");
         }
 

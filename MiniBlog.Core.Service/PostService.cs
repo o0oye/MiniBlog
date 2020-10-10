@@ -46,7 +46,8 @@ namespace MiniBlog.Core.Service
             var postEntity = _mapper.Map<PostEntity>(editPostViewModel);
             postEntity.UpdateTime = DateTime.Now;
             var entity = UpdateEntity(postEntity);
-            entity.Property("CreateTime").IsModified = false;
+            entity.Property(m=>m.CreateTime).IsModified = false;
+            entity.Property(m => m.Content).IsModified = false;
             return await _UnitOfWork.SaveChangesAsync();
         }
 
@@ -83,6 +84,7 @@ namespace MiniBlog.Core.Service
                     Title = p.Title,
                     CreateTime = p.CreateTime,
                     Icon = p.Icon,
+                    IsShow = p.IsShow,
                     Category = c.Category,
                 })
                 .OrderByDescending(m => m.CreateTime)

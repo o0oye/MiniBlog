@@ -297,7 +297,6 @@ D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Hom
 D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Pictures.cshtml.g.cs
 D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Post.cshtml.g.cs
 D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Posts.cshtml.g.cs
-D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\test.cshtml.g.cs
 D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\MyWork\MiniBlog\MiniBlog.App.ManageUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs

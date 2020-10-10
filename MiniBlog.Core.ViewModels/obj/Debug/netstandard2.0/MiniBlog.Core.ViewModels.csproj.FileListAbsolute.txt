@@ -15,3 +15,4 @@ D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Co
 D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.csproj.CoreCompileInputs.cache
 D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.dll
 D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.pdb
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Debug\netstandard2.0\MiniBlog.Core.ViewModels.csprojAssemblyReference.cache

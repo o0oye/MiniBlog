@@ -44,17 +44,17 @@ namespace MiniBlog.Core.Service
         }
 
         //删除图片
-        public async Task<int> DeletePicture(long id)
+        public async Task<int> DeletePicture(long id, string rootPath)
         {
             var entity = await GetEntity(id);
             if (entity == null)
             {
                 return 0;
             }
-            var big = entity.Big;
-            var small = entity.Small;  
+            var big = Path.Combine(rootPath, entity.Big);
+            var small = Path.Combine(rootPath, entity.Small);
             //删除图片文件
-            if(File.Exists(big))
+            if (File.Exists(big))
             {
                 //设置文件的属性为正常，这是为了防止文件是仅仅读
                 File.SetAttributes(big, FileAttributes.Normal);

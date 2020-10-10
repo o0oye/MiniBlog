@@ -3,10 +3,10 @@
 @model IEnumerable<MiniBlog.Core.ViewModels.ListView.ListCategoryViewModel>
 
 @{
-    ViewData["Title"] = "分类管理";
+    ViewData["Title"] = "管理分类";
 }
 
-<h4>Categories</h4>
+<h4>管理分类</h4>
 <table class="table">
     <thead>
         <tr>
@@ -31,7 +31,7 @@
                 @Html.DisplayFor(modelItem => item.Category)
             </td>
             <td>
-                @Html.ActionLink("编辑", "Category", new {id=item.Id})
+                @Html.ActionLink("编辑", "category", new {id=item.Id})
             </td>
         </tr>
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>标题</title>
+        <link href="./css/index.css" rel="stylesheet"/>
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/uploadImg.js"></script>
+    </head>
+    <body>
+      <div id="container">
+        <a href="javascript:void(0)" class="file">选择文件
+           <input type='file' multiple accept = 'image/gif,image/jpeg,image/jpg,image/png' />
+           <input type="hidden" value=""/>
+         </a>
+      </div>
+      <div id="container2">
+        <a href="javascript:void(0)" class="file">选择文件
+           <input type='file' multiple accept = 'image/gif,image/jpeg,image/jpg,image/png' />
+           <input type="hidden" />
+         </a>
+      </div>
+      <script type="text/javascript">
+        var data = [
+          {
+            "url": 'https://img.alicdn.com/tfs/TB11nHZXWagSKJjy0FgXXcRqFXa-218-46.png'
+          },
+          {
+            "url": 'https://img.alicdn.com/simba/img/TB1WT41SVXXXXaSXpXXSutbFXXX.jpg'
+          }
+        ];
+        var params = {
+          container: '#container',
+          url: '',
+          dragDrop: false,
+          data: data,
+          onDragLeave: function(target) {
+            console.log(111)
+          }
+        };
+        var uploadImg1 = new UploadImg(params);
+        
+        // 多个情况下
+        var params2 = {
+          container: '#container2',
+          url: ''
+        };
+        var uploadImg2 = new UploadImg(params2);
+      </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\bin\Release\netstandard2.0\MiniBlog.Core.ViewModels.deps.json
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\bin\Release\netstandard2.0\MiniBlog.Core.ViewModels.dll
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\bin\Release\netstandard2.0\MiniBlog.Core.ViewModels.pdb
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Release\netstandard2.0\MiniBlog.Core.ViewModels.csprojAssemblyReference.cache
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Release\netstandard2.0\MiniBlog.Core.ViewModels.AssemblyInfoInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Release\netstandard2.0\MiniBlog.Core.ViewModels.AssemblyInfo.cs
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Release\netstandard2.0\MiniBlog.Core.ViewModels.csproj.CoreCompileInputs.cache
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Release\netstandard2.0\MiniBlog.Core.ViewModels.dll
+D:\MyWork\MiniBlog\MiniBlog.Core.ViewModels\obj\Release\netstandard2.0\MiniBlog.Core.ViewModels.pdb

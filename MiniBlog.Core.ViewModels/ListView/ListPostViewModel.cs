@@ -17,5 +17,8 @@ namespace MiniBlog.Core.ViewModels.ListView
 
         [DisplayName("缩略图")]
         public string Icon { get; set; }
+
+        [DisplayName("显示")]
+        public bool IsShow { get; set; }
     }
 }

@@ -4,7 +4,7 @@
     ViewData["Title"] = "博文管理";
 }
 
-<h4>Posts</h4>
+<h4>管理博文</h4>
 <table class="table">
     <thead>
         <tr>
@@ -15,9 +15,14 @@
                 @Html.DisplayNameFor(model => model.Category)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.IsShow)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.CreateTime)
             </th>
-            <th></th>
+            <th>
+                <a asp-controller="home" asp-action="post">发布博文</a>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -30,15 +35,18 @@
                 @Html.DisplayFor(modelItem => item.Category)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.IsShow)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.CreateTime)
             </td>
             <td>
-                @Html.ActionLink("编辑内容", "Content", new { id = item.Id }) |
-                @Html.ActionLink("编辑", "Post", new { id = item.Id }) |
-                @Html.ActionLink("删除", "DeletePost", new { id = item.Id })
+                @Html.ActionLink("编辑内容", "content", new { id = item.Id }) |
+                @Html.ActionLink("编辑", "post", new { id = item.Id }) |
+                @Html.ActionLink("删除", "deletePost", new { id = item.Id })
             </td>
         </tr>
 }
     </tbody>
 </table>
-<pager action-url="/Home/Posts" option="ViewBag.Options"></pager>
+<pager action-url="/home/posts" option="ViewBag.Options"></pager>

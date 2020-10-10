@@ -2,9 +2,9 @@
 @model IEnumerable<MiniBlog.Core.ViewModels.ListView.ListPictureViewModel>
 
 @{
-    ViewData["Title"] = "图片管理";
+    ViewData["Title"] = "管理图片";
 }
-<h4>Pictures</h4>
+<h4>管理图片</h4>
 <table class="table">
     <thead>
         <tr>
@@ -18,7 +18,7 @@
                 @Html.DisplayNameFor(model => model.CreateTime)
             </th>
             <th>
-                <a asp-controller="Home" asp-action="Picture">上传图片</a>
+                <a asp-controller="home" asp-action="picture">上传图片</a>
             </th>
         </tr>
     </thead>
@@ -28,25 +28,22 @@
         <tr>
             <td>
                 @{
-                    var index= item.Small.LastIndexOf("\\");
-                    var img = item.Small.Substring(index+1);
-
-                    var bigIndex = item.Big.LastIndexOf("\\");
-                    var bigImg = item.Big.Substring(bigIndex+1);
+                    var img = item.Small;
+                    var bigImg = item.Big;
                 }
-                <img src="/@img" style="height:50px;" />
+                <img src="/@img" style="height:80px;" />
             </td>
             <td>
-                <img src="/@bigImg" style="height:50px;" />
+                @bigImg
             </td>
             <td>
                 @item.CreateTime
             </td>
             <td>
-                @Html.ActionLink("删除", "DeletePicture", new { id = item.Id })
+                @Html.ActionLink("删除", "deletepicture", new { id = item.Id })
             </td>
         </tr>
         }
     </tbody>
 </table>
-<pager option="ViewBag.Options" action-url="/Home/Pictures"></pager>
+<pager option="ViewBag.Options" action-url="/home/pictures"></pager>

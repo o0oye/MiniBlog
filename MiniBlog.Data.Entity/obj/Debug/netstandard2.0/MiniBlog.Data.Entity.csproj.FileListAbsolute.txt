@@ -24,3 +24,4 @@ D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.E
 D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.csproj.CoreCompileInputs.cache
 D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.dll
 D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.pdb
+D:\MyWork\MiniBlog\MiniBlog.Data.Entity\obj\Debug\netstandard2.0\MiniBlog.Data.Entity.csprojAssemblyReference.cache

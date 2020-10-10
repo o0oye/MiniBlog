@@ -1,8 +1,10 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace MiniBlog.Core.Plugin.IO
 {
@@ -55,7 +57,7 @@ namespace MiniBlog.Core.Plugin.IO
         /// <param name="savePath">如果和原图地址相同则覆盖原图</param>
         /// <param name="toWidth">生成图片宽</param>
         /// <param name="quality">压缩质量(1~100)数字越小压缩比率越大(</param>
-        public static void AutoToSmall(Stream inStream, string savePath, int toWidth, int quality = 100)
+        public static async Task AutoToSmall(Stream inStream, string savePath, int toWidth, int quality = 100)
         {
             //原始图片
             var initImage = Image.FromStream(inStream);
@@ -82,8 +84,14 @@ namespace MiniBlog.Core.Plugin.IO
             //图片太小不用处理了,直接保存
             if (toWidth >= initWidth)
             {
-                initImage.Save(savePath);
+                //initImage.Save(savePath, rawFormat);     
+                //initImage.Save在linux上保存，莫名对图片进行了压缩，还不知什么原因，改用流保存
                 initImage.Dispose();
+                using (var fileStream = File.Create(savePath))
+                {
+                    inStream.Seek(0, SeekOrigin.Begin);
+                    await inStream.CopyToAsync(fileStream);
+                }
                 return;
             }
             var toHeight = toWidth * initHeight / initWidth;
